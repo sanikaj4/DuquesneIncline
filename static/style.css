@@ -45,12 +45,12 @@
   }
   
   header nav ul li a:hover {
-    color: #ff6f61;
+    color: #C0392B;
   }
   
   /* Hero Section */
   .hero {
-    background: url('images/hero.jpg') no-repeat center center/cover;
+    background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover;
     color: #fff;
     height: 400px;
     display: flex;
@@ -70,7 +70,7 @@
   }
   
   .btn {
-    background-color: #ff6f61;
+    background-color: #C0392B;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -79,7 +79,7 @@
   }
   
   .btn:hover {
-    background-color: #ff3b2a;
+    background-color: #C0392B;
   }
   
   /* Section styling */
@@ -106,7 +106,7 @@
   }
   
   footer a {
-    color: #ff6f61;
+    color: #C0392B;
     text-decoration: none;
   }
   
