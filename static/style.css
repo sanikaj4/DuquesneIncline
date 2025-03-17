@@ -31,20 +31,11 @@
   
   header nav ul {
     list-style-type: none;
-  }
-  
-  header nav ul li {
     display: inline-block;
     margin-right: 20px;
-  }
-  
-  header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-  }
-  
-  header nav ul li a:hover {
     color: #C0392B;
   }
   
