@@ -74,7 +74,7 @@
     color: #C0392B;
   }
   
-  .hero {
+  .voted-section {
     padding-bottom: 40px;
     padding-top: 120px;
     background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover ;
@@ -86,12 +86,12 @@
     text-align: center;
   }
   
-  .hero h2 {
+  .voted-section h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
   }
   
-  .hero p {
+  .voted-section p {
     font-size: 1.2rem;
     margin-bottom: 20px;
   }
