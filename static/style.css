@@ -30,7 +30,7 @@
   
 
   header {
-    background-color: #333;
+    background-color: #1e1e1e;
     color: #fff;
     padding: 15px 0;
     position: fixed;
@@ -70,7 +70,7 @@
   }
   
   header nav ul li a:hover {
-    color: #ff6f61;
+    color: #C0392B;
   }
   
   .hero {
@@ -95,7 +95,7 @@
   }
   
   .btn {
-    background-color: #ff6f61;
+    background-color: #C0392B;
     color: #fff;
     padding: 12px 20px;
     border-radius: 5px;
@@ -105,7 +105,7 @@
   }
   
   .btn:hover {
-    background-color: #ff3b2a;
+    background-color: #C0392B;
   }
   
   section {
@@ -125,14 +125,14 @@
   }
   
   footer {
-    background-color: #333;
+    background-color: #1e1e1e;
     color: #fff;
     text-align: center;
     padding: 30px;
   }
   
   footer a {
-    color: #ff6f61;
+    color: #C0392B;
     text-decoration: none;
   }
   
