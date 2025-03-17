@@ -75,6 +75,7 @@
   }
   
   .hero {
+    margin-top: 10px;
     background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover ;
     color: #fff;
     height: 500px;
