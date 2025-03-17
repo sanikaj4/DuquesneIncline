@@ -5,18 +5,40 @@
     box-sizing: border-box;
   }
   
-  /* Basic typography */
-  body {
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #1e1e1e;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   
-  /* Header styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 80px;
+  }
+  
+
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+
   header {
-    background-color: #1e1e1e;
+    background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   header .container {
@@ -26,33 +48,45 @@
   }
   
   header h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   header nav ul {
     list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li {
     display: inline-block;
-    margin-right: 20px;
+  }
+  
+  header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-    color: #C0392B;
+    padding: 10px 15px;
+    transition: color 0.3s;
   }
   
-  /* Hero Section */
+  header nav ul li a:hover {
+    color: #ff6f61;
+  }
+  
   .hero {
-    background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover;
+    background: url('images/hero.jpg') no-repeat center center/cover;
     color: #fff;
-    height: 400px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px;
   }
   
   .hero h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
   .hero p {
@@ -61,21 +95,22 @@
   }
   
   .btn {
-    background-color: #C0392B;
+    background-color: #ff6f61;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    transition: background 0.3s;
   }
   
   .btn:hover {
-    background-color: #C0392B;
+    background-color: #ff3b2a;
   }
   
-  /* Section styling */
   section {
-    padding: 40px 0;
+    padding: 60px 0;
+    text-align: center;
   }
   
   section h2 {
@@ -84,20 +119,20 @@
   }
   
   section p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
+    padding: 0 10px;
   }
   
-  /* Footer Styling */
   footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
   }
   
   footer a {
-    color: #C0392B;
+    color: #ff6f61;
     text-decoration: none;
   }
   
