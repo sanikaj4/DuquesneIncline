@@ -53,6 +53,7 @@
   
   header nav ul {
     list-style-type: none;
+    color: #fff;
     display: flex;
     gap: 20px;
   }
@@ -69,7 +70,7 @@
     transition: color 0.3s;
   }
   
-  header nav ul li a:hover {
+  header nav ul a:hover {
     color: #C0392B;
   }
   
