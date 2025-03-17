@@ -20,6 +20,9 @@
     padding-top: 80px;
   }
   
+  head {
+    background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover ;
+  }
 
   .container {
     width: 90%;
@@ -77,7 +80,6 @@
   .hero {
     padding-bottom: 40px;
     padding-top: 120px;
-    background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover ;
     color: #fff;
     height: 500px;
     display: flex;
