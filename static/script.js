@@ -22,5 +22,3 @@ function initMap() {
         title: "The Duquesne Incline"
     });
 }
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXDyXPB8L7-64i4no39mHPg8zOKlPu4hg&callback=initMap"></script>
