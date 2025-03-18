@@ -70,9 +70,19 @@ header .container {
     align-items: center;
 }
 
-header h1 {
-    font-size: 1.8rem;
-}
+h1 {
+    margin: 0; /* Remove default margin */
+    padding-left: 20px; /* Add padding to the left */
+  }
+  
+  h1 a {
+    display: block; /* Make the link a block element to take up full width */
+  }
+  
+  h1 img {
+    display: block; /* Ensure the image is not inline and doesn't add any unwanted spacing */
+    margin: 0; /* Remove default margin */
+  }
 
 /* Navigation styles */
 nav ul {
