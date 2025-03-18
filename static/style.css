@@ -82,6 +82,8 @@ nav ul li {
 
 nav ul li a {
     color: var(--text-color);
+    width: 30px;
+    height: 20px;
     text-decoration: none;
     font-size: 1.1rem;
     padding: 10px 15px;
@@ -115,8 +117,6 @@ nav ul li ul.dropdown {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 30px;
-    height: 20px;
     background-color: var(--primary-bg);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 1;
