@@ -135,6 +135,7 @@ nav ul li .dropdown li a:hover {
 .voted h3 {
     position: relative;
     z-index: 1;
+    margin-top: 40px;
 }
 .voted h3 {
     font-style:italic;
