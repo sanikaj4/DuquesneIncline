@@ -92,23 +92,21 @@ header nav ul a:hover {
     position: relative;
     z-index: 1;
 }
-
 .voted h3 {
-    font-style: italic;
+    font-style:italic;
     font-size: 1.3rem;
-    color: #EAEDED;
+    color:#EAEDED;
     padding-bottom: 20px;
 }
-
 .voted a {
     position: relative;
     z-index: 2;
 }
 
 section {
-    padding: 50px 0;
+    padding: 50px 0; 
     text-align: center;
-    background: linear-gradient(to bottom, rgba(44, 62, 80, 1), rgba(44, 62, 80, 0) 60%, rgba(30, 30, 30, 1));
+    background-color: #2C3E50;
     color: #EAEDED;
 }
 
@@ -137,6 +135,7 @@ section p {
     margin: 20px auto;
     border-radius: 10px;
 }
+
 
 footer {
     background-color: #1e1e1e;
