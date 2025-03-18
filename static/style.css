@@ -215,6 +215,10 @@ section p {
     border-radius: 10px;
 }
 
+.map-section h2 {
+    color: var(--primary-bg);
+}
+
 footer {
     background-color: var(--secondary-bg);
     color: var(--text-color);
