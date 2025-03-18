@@ -79,6 +79,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    align-items: center; /* Ensure vertical alignment */
 }
 
 nav ul li {
