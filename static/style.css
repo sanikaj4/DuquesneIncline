@@ -48,7 +48,6 @@ header h1 {
 }
 
 /* Navigation styles */
-/* Navigation styles */
 nav ul {
     list-style: none;
     display: flex;
@@ -66,19 +65,8 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.1rem;
     padding: 10px 15px;
-    display: block; /* Add this to make the entire area clickable */
     transition: color 0.3s ease;
-    pointer-events: auto;
 }
-
-nav ul li a:active {
-    background-color: #ff0000;
-    color: white;
-}
-
-header::before, header::after,
-nav::before, nav::after {
-    pointer-events: none;
 
 /* Hover effect for main menu items */
 nav ul li a:hover {
@@ -94,9 +82,8 @@ nav ul li ul.dropdown {
     background-color: #2C3E50;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1001; /* Increased z-index to ensure it appears above other elements */
-    min-width: 180px; /* Makes dropdowns a little wider */
-    border-radius: 4px; /* Optional: rounds the corners of the dropdown */
+    z-index: 1;
+    min-width: 180px; /* Optional: Makes dropdowns a little wider */
 }
 
 /* Show the dropdown on hover of the parent <li> */
@@ -105,23 +92,17 @@ nav ul li:hover .dropdown {
 }
 
 /* Dropdown link styles */
-nav ul li .dropdown li {
-    width: 100%; /* Make list items take full width of dropdown */
-}
-
 nav ul li .dropdown li a {
     display: block;
     padding: 10px 20px;
     color: #EAEDED;
     text-decoration: none;
     font-size: 1rem;
-    width: 100%; /* Make links take full width for better clickability */
 }
 
 /* Hover effect for dropdown links */
 nav ul li .dropdown li a:hover {
     background-color: #C0392B;
-    color: #EAEDED; /* Ensure text remains visible on hover */
 }
 
 
