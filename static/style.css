@@ -115,6 +115,8 @@ nav ul li ul.dropdown {
     position: absolute;
     top: 100%;
     left: 0;
+    width: 30px;
+    height: 20px;
     background-color: var(--primary-bg);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 1;
