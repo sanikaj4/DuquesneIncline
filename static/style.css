@@ -141,7 +141,7 @@ nav ul li .dropdown li a:hover {
     font-style:italic;
     font-size: 1.3rem;
     color:#EAEDED;
-    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .voted a {
     position: relative;
