@@ -68,7 +68,17 @@ nav ul li a {
     padding: 10px 15px;
     display: block; /* Add this to make the entire area clickable */
     transition: color 0.3s ease;
+    pointer-events: auto;
 }
+
+nav ul li a:active {
+    background-color: #ff0000;
+    color: white;
+}
+
+header::before, header::after,
+nav::before, nav::after {
+    pointer-events: none;
 
 /* Hover effect for main menu items */
 nav ul li a:hover {
