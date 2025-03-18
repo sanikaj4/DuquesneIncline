@@ -20,7 +20,7 @@
 body {
     font-family: Inter, sans-serif;
     line-height: 1.6;
-    background-color: var(--primary-bg);
+    background-color: var(--secondary-bg);
     color: var(--text-color);
     padding-top: var(--header-height);
 }
