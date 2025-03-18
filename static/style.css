@@ -220,7 +220,7 @@ section p {
 }
 
 .map-section::before {
-    background: linear-gradient(to top, rgba(44, 62, 80, 0), rgba(44, 62, 80, 1));
+    background: linear-gradient(to bottom, rgba(44, 62, 80, 1), rgba(44, 62, 80, 0));
 }
 
 footer {
