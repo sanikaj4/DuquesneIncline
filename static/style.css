@@ -121,6 +121,17 @@ section p {
     padding: 0 10px;
 }
 
+.sections {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    background-color: #EAEDED;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
 .map-section {
     text-align: center;
     padding: 50px 0;
