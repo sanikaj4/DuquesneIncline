@@ -23,37 +23,24 @@ body {
 header {
     background-color: #1e1e1e;
     color: #EAEDED;
-    padding: 15px 0;
+    padding: 25px 0;  /* Increased padding for better coverage */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    min-height: 100px;
+    min-height: 120px;  /* Ensures the header has enough height */
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 header h1 {
     font-size: 1.8rem;
-}
-
-header h1 a {
-    display: flex;
-    align-items: center;
-}
-
-header .duquesnetextlogo {
-    width: 230px;
-    height: auto;
 }
 
 header nav ul {
@@ -76,13 +63,13 @@ header nav ul a:hover {
 
 /* Dropdown Menu Container */
 nav ul li {
-    position: relative;
+    position: relative; /* This is important for dropdown positioning */
 }
 
 nav ul li .dropdown {
-    display: none;
+    display: none; /* Hide dropdown by default */
     position: absolute;
-    top: 100%;
+    top: 100%; /* Position the dropdown right below the menu item */
     left: 0;
     background-color: #1e1e1e;
     padding: 10px 0;
