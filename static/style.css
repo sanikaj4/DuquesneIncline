@@ -22,7 +22,6 @@ body {
     padding: 20px;
 }
 
-/* Header styling */
 header {
     background-color: #1e1e1e;
     color: #EAEDED;
@@ -32,11 +31,11 @@ header {
     top: 0;
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure header is above other content */
-    min-height: 120px; /* Ensures the header has enough height */
+    z-index: 1000;
+    min-height: 120px;
 }
 
-/* Header container */
+/* Flexbox layout for header content */
 header .container {
     display: flex;
     justify-content: space-between;
@@ -48,35 +47,34 @@ header h1 {
     font-size: 1.8rem;
 }
 
-/* Navigation styling */
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Horizontal layout for nav items */
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-header nav ul li {
-    position: relative; /* Needed for dropdown positioning */
+nav ul li {
+    position: relative; /* Necessary for positioning the dropdown */
 }
 
-header nav ul li a {
+nav ul li a {
     color: #EAEDED;
     text-decoration: none;
     font-size: 1.1rem;
     padding: 10px 15px;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
     color: #C0392B;
 }
 
-/* Dropdown styling */
-header nav ul li .dropdown {
-    display: none; /* Hide dropdown by default */
+/* Dropdown menu styles */
+nav ul li ul.dropdown {
+    display: none; /* Hide by default */
     position: absolute;
-    top: 100%;
+    top: 100%; /* Position below the parent menu item */
     left: 0;
     background-color: #1e1e1e;
     padding: 10px 0;
@@ -84,21 +82,22 @@ header nav ul li .dropdown {
     z-index: 1;
 }
 
-header nav ul li:hover .dropdown {
-    display: block; /* Show dropdown when hovered */
+/* Show the dropdown when the parent <li> is hovered */
+nav ul li:hover .dropdown {
+    display: block;
 }
 
-/* Dropdown link styling */
-header nav ul li .dropdown li a {
+/* Dropdown link styles */
+nav ul li .dropdown li a {
     display: block;
     padding: 10px 20px;
     color: #EAEDED;
     text-decoration: none;
     font-size: 1rem;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-header nav ul li .dropdown li a:hover {
+nav ul li .dropdown li a:hover {
     background-color: #C0392B;
 }
 
@@ -136,7 +135,7 @@ header nav ul li .dropdown li a:hover {
     font-style:italic;
     font-size: 1.3rem;
     color:#EAEDED;
-    padding-top: -20px;
+    padding-top: 20px;
 }
 .voted a {
     position: relative;
