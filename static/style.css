@@ -49,7 +49,7 @@ header nav ul {
     gap: 20px;
 }
 
-header nav ul li a {
+header nav ul a {
     color: #EAEDED;
     text-decoration: none;
     font-size: 1.1rem;
@@ -57,20 +57,47 @@ header nav ul li a {
     transition: color 0.3s;
 }
 
-header nav ul li a:hover {
+header nav ul a:hover {
     color: #C0392B;
 }
 
 /* Dropdown Menu Container */
-nav ul {
+nav ul li {
     position: relative; /* This is important for dropdown positioning */
 }
 
-nav ul li {
-    position: relative;
+nav ul li .dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    top: 100%; /* Position the dropdown right below the menu item */
+    left: 0;
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-position: bottom right;
 }
 
-nav ul .dropdown {
+/* Show dropdown when the parent menu item is hovered */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Dropdown Links */
+nav ul li .dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #EAEDED;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li .dropdown a:hover {
+    background-color: #C0392B;
+}
+
+nav ul li .dropdown {
     display: none; /* Hide dropdown by default */
     position: absolute;
     top: 100%; /* Position the dropdown right below the menu item */
@@ -110,7 +137,6 @@ nav ul li .dropdown a:hover {
     text-align: center;
     color: #EAEDED;
     margin-top: 100px;
-    background-position: bottom right;
 }
 
 .voted::before {
@@ -129,14 +155,12 @@ nav ul li .dropdown a:hover {
     position: relative;
     z-index: 1;
 }
-
 .voted h3 {
-    font-style: italic;
+    font-style:italic;
     font-size: 1.3rem;
-    color: #EAEDED;
+    color:#EAEDED;
     padding-bottom: 20px;
 }
-
 .voted a {
     position: relative;
     z-index: 2;
@@ -178,4 +202,87 @@ section p {
 
 #map {
     width: 90%;
-    max-width: 
+    max-width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #1e1e1e;
+    color: #EAEDED;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+footer .footer-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+footer .footer-info > div {
+    flex: 1;
+    margin: 0 15px;
+}
+
+footer h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: #F1C40F;
+    margin-bottom: 8px;
+    font-weight:bold;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #EAEDED;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #C0392B;
+}
+
+/* Copyright section stays at the bottom of the page */
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer .copyright p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.btn {
+    background-color: #C0392B;
+    color: #EAEDED;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #A93226;
+}
