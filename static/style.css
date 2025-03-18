@@ -33,6 +33,7 @@ header {
     top: 0;
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 header .container {
@@ -53,7 +54,6 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    z-index: 0;
 }
 
 header nav ul li a {
