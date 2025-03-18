@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
     background-color: #2C3E50;
     color: #EAEDED;
-    padding-top: 120px; /* Ensure there's space below the header for clickable links */
+    padding-top: 80px; /* Ensure there's space below the header for clickable links */
 }
 
 /* Container styling */
@@ -101,6 +101,7 @@ header nav ul li .dropdown li a {
 header nav ul li .dropdown li a:hover {
     background-color: #C0392B;
 }
+
 
 .voted {
     position: relative;
