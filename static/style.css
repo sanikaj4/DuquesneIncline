@@ -1,19 +1,23 @@
-
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
   
-
   body {
-    font-family: 'Raleway', sans-serif;
+    font-family: Raleway, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #1e1e1e;
-    padding-top: 80px; 
+    padding-top: 80px;
   }
   
 
@@ -37,31 +41,27 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-
   header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
-
   header h1 {
     font-size: 1.8rem;
   }
   
-
   header nav ul {
     list-style-type: none;
+    color: #fff;
     display: flex;
     gap: 20px;
   }
   
-
   header nav ul li {
     display: inline-block;
   }
   
-
   header nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -74,7 +74,6 @@
     color: #C0392B;
   }
   
-
   .hero {
     background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover;
     color: #fff;
@@ -96,7 +95,6 @@
     margin-bottom: 20px;
   }
   
-
   .btn {
     background-color: #C0392B;
     color: #fff;
@@ -108,31 +106,25 @@
   }
   
   .btn:hover {
-    background-color: #D75D5D;
+    background-color: #C0392B;
   }
   
-
   section {
-    padding: 60px 20px;
+    padding: 60px 0;
     text-align: center;
-    background-color: #fff; 
-    margin-bottom: 40px;
   }
   
   section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #C0392B;
   }
   
   section p {
     font-size: 1.1rem;
     margin-bottom: 20px;
     padding: 0 10px;
-    color: #333;
   }
   
-
   footer {
     background-color: #1e1e1e;
     color: #fff;
@@ -140,11 +132,9 @@
     padding: 30px;
   }
   
-
   footer a {
     color: #C0392B;
     text-decoration: none;
-    font-weight: bold;
   }
   
   footer a:hover {
