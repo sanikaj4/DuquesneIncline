@@ -210,8 +210,9 @@ footer .footer-info > div {
 footer h3 {
     margin-top: 0;
     font-size: 1.1rem;
-    color: #EAEDED;
+    color: #F1C40F;
     margin-bottom: 8px;
+    font-weight:bold;
 }
 
 footer p {
