@@ -102,6 +102,7 @@ header nav ul li a:hover {
     font-style:italic;
     font-size: 1.3rem;
     color:#EAEDED
+    z-index: 1
 }
 .voted a {
     position: relative;
