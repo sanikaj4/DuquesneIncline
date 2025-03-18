@@ -98,6 +98,10 @@ header nav ul li a:hover {
     position: relative;
     z-index: 1;
 }
+.voted h3 {
+    font-style:italic;
+    font-size: 1.3rem;
+}
 .voted a {
     position: relative;
     z-index: 2;
