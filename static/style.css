@@ -49,7 +49,7 @@ header nav ul {
     gap: 20px;
 }
 
-header nav ul a {
+header nav ul li a {
     color: #EAEDED;
     text-decoration: none;
     font-size: 1.1rem;
@@ -57,7 +57,7 @@ header nav ul a {
     transition: color 0.3s;
 }
 
-header nav ul a:hover {
+header nav ul li a:hover {
     color: #C0392B;
 }
 
@@ -87,7 +87,7 @@ nav ul li:hover .dropdown {
 }
 
 /* Dropdown Links */
-nav ul .dropdown a {
+nav ul li .dropdown a {
     display: block;
     padding: 10px 20px;
     color: #EAEDED;
@@ -96,7 +96,7 @@ nav ul .dropdown a {
     transition: background-color 0.3s;
 }
 
-nav ul .dropdown a:hover {
+nav ul li .dropdown a:hover {
     background-color: #C0392B;
 }
 
