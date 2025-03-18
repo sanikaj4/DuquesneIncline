@@ -75,7 +75,6 @@ nav ul li .dropdown {
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    background-position: bottom right;
 }
 
 /* Show dropdown when the parent menu item is hovered */
@@ -137,6 +136,7 @@ nav ul li .dropdown a:hover {
     text-align: center;
     color: #EAEDED;
     margin-top: 100px;
+    background-position: bottom right;
 }
 
 .voted::before {
