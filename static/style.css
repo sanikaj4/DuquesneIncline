@@ -109,7 +109,7 @@ nav ul li a:hover {
     cursor: pointer;
     position: relative;
     width: 50px;
-    height: 20px;
+    height: 100px;
 }
 
 nav ul li ul.dropdown {
