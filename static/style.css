@@ -72,7 +72,7 @@ header nav ul li a:hover {
 .voted {
     position: relative;
     background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover;
-    height: 700px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,5 +151,5 @@ footer p {
 }
 
 .btn:hover {
-    background-color: #C0392B;
+    background-color: #A93226;
 }
