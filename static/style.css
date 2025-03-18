@@ -208,6 +208,12 @@ section p {
 }
 
 .map-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(to bottom, rgba(44, 62, 80, 1), rgba(44, 62, 80, 0));
 }
 
