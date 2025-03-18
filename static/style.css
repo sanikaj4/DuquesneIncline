@@ -98,7 +98,6 @@ nav ul li .dropdown li a {
     color: #EAEDED;
     text-decoration: none;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
 }
 
 /* Hover effect for dropdown links */
