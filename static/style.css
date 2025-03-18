@@ -211,6 +211,7 @@ footer .footer-info > div {
 footer h3 {
     margin-top: 0;
     font-size: 1.1rem;
+    text-align: center;
     color: #EAEDED;
     margin-bottom: 8px;
 }
@@ -232,7 +233,6 @@ footer a:hover {
 /* Copyright section stays at the bottom of the page */
 footer .copyright {
     width: 100%;
-    text-align: center;
     padding-top: 20px;
 }
 
