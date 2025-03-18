@@ -167,14 +167,12 @@ nav ul li .dropdown li a:hover {
 .voted a {
     position: relative;
     z-index: 1;
-    margin-top: 40px;
 }
 
 .voted h3 {
     font-style: italic;
     font-size: 1.3rem;
     color: var(--text-color);
-    padding-bottom: 20px;
 }
 
 section {
