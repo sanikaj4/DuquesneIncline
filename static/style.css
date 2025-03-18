@@ -70,8 +70,8 @@
   
   /* Hero Section */
   .hero {
-    background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover;
     color: #EAEDED;
+    background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover;
     height: 500px;
     display: flex;
     justify-content: center;
