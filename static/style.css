@@ -1,4 +1,3 @@
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +5,14 @@
     scroll-behavior: smooth;
 }
 
-/* Basic typography */
 body {
     font-family: Inter, sans-serif;
     line-height: 1.6;
-    background-color: #2C3E50; /* Deep blue background */
+    background-color: #2C3E50;
     color: #EAEDED;
-    padding-top: 80px; /* Ensures content doesn't get hidden under the fixed navbar */
+    padding-top: 80px;
 }
 
-/* Container for spacing */
 .container {
     width: 90%;
     max-width: 1100px;
@@ -23,7 +20,6 @@ body {
     padding: 20px;
 }
 
-/* Header styling */
 header {
     background-color: #1e1e1e;
     color: #EAEDED;
@@ -68,7 +64,6 @@ header nav ul li a:hover {
     color: #C0392B;
 }
 
-/* Voted Section */
 .voted {
     position: relative;
     background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover;
@@ -78,10 +73,9 @@ header nav ul li a:hover {
     align-items: center;
     text-align: center;
     color: #EAEDED;
-    margin-top: 100px; /* Adjusted to start lower */
+    margin-top: 100px;
 }
 
-/* Gradient overlay */
 .voted::before {
     content: "";
     position: absolute;
@@ -92,7 +86,6 @@ header nav ul li a:hover {
     background: linear-gradient(to bottom, rgba(44, 62, 80, 0.5), rgba(44, 62, 80, 1));
 }
 
-/* Ensuring text is above the gradient */
 .voted h2,
 .voted p,
 .voted h3 {
@@ -103,7 +96,6 @@ header nav ul li a:hover {
     font-style:italic;
     font-size: 1.3rem;
     color:#EAEDED;
-    padding-top: none;
     padding-bottom: 20px;
 }
 .voted a {
@@ -111,11 +103,10 @@ header nav ul li a:hover {
     z-index: 2;
 }
 
-/* Section Styling */
 section {
-    padding: 50px 0; /* Adds vertical padding for sections */
+    padding: 50px 0; 
     text-align: center;
-    background-color: #2C3E50; /* Matching the deep blue of the gradient */
+    background-color: #2C3E50;
     color: #EAEDED;
 }
 
@@ -130,7 +121,6 @@ section p {
     padding: 0 10px;
 }
 
-/* Footer Styling */
 footer {
     background-color: #1e1e1e;
     color: #EAEDED;
@@ -151,7 +141,6 @@ footer p {
     margin: 5px 0;
 }
 
-/* Button Styling */
 .btn {
     background-color: #C0392B;
     color: #EAEDED;
