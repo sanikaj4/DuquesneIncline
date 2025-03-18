@@ -70,25 +70,9 @@ header .container {
     align-items: center;
 }
 
-header {
-    display: flex;
-    justify-content: space-between; /* Ensures the logo and headers stay on opposite sides */
-    align-items: center; /* Vertically centers the items in the header */
-    padding: 0 20px; /* Adds padding around the header */
-  }
-  
-  h1 {
-    margin: 0; /* Removes any default margin */
-  }
-  
-  h1 a {
-    display: block;
-  }
-  
-  h1 img {
-    margin: 0;
-    padding-left: 0; /* Adjust this padding if you need more space */
-  }
+header h1 {
+    font-size: 1.8rem;
+}
 
 /* Navigation styles */
 nav ul {
