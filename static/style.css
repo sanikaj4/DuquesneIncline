@@ -182,14 +182,30 @@ footer {
     color: #EAEDED;
     padding: 20px 0;
     font-size: 0.9rem;
+    position: relative;
 }
 
 footer .container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+footer .footer-info {
+    display: flex;
     justify-content: space-between;
+    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-bottom: 20px; /* Space between footer info and copyright */
     padding: 0 20px;
+    text-align: center;
+}
+
+footer .footer-info > div {
+    flex: 1;
+    margin: 0 15px;
 }
 
 footer h3 {
@@ -213,14 +229,16 @@ footer a:hover {
     color: #C0392B;
 }
 
-@media (max-width: 768px) {
-    footer .container {
-        flex-direction: column;
-        align-items: center;
-    }
-    footer .contact-info, footer .parking-info, footer .hours-info {
-        margin-bottom: 15px;
-    }
+/* Copyright section stays at the bottom of the page */
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer .copyright p {
+    margin: 0;
+    font-size: 0.8rem;
 }
 
 .btn {
