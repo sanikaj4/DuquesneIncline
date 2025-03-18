@@ -1,3 +1,4 @@
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,26 +6,54 @@
     scroll-behavior: smooth;
 }
 
-/* Body styling */
+/* Variables */
+:root {
+    --primary-bg: #2C3E50;
+    --secondary-bg: #1e1e1e;
+    --text-color: #EAEDED;
+    --accent-color: #C0392B;
+    --accent-hover: #A93226;
+    --highlight-color: #F1C40F;
+    --container-width: 90%;
+    --container-max: 1100px;
+    --header-height: 100px;
+}
+
+/* Base styles */
 body {
     font-family: Inter, sans-serif;
     line-height: 1.6;
-    background-color: #2C3E50;
-    color: #EAEDED;
-    padding-top: 80px; /* Ensure there's space below the header for clickable links */
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    padding-top: var(--header-height); /* Space for fixed header */
 }
 
-/* Container styling */
 .container {
-    width: 90%;
-    max-width: 1100px;
+    width: var(--container-width);
+    max-width: var(--container-max);
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Button styles */
+.btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Header styles */
 header {
-    background-color: #1e1e1e;
-    color: #EAEDED;
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
     padding: 25px 0;
     position: fixed;
     width: 100%;
@@ -32,17 +61,15 @@ header {
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    min-height: 100px;
+    min-height: var(--header-height);
 }
 
-/* Flexbox layout for header content */
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Logo styling */
 header h1 {
     font-size: 1.8rem;
 }
@@ -54,24 +81,23 @@ nav ul {
     gap: 20px;
 }
 
-.dropdown-toggle {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-    cursor: pointer;
+nav ul li {
     position: relative;
 }
 
-.dropdown-toggle::after {
-    content: "▼";
-    font-size: 0.7em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Dropdown styling */
 .has-dropdown {
     display: flex;
     align-items: center;
@@ -81,76 +107,55 @@ nav ul {
     z-index: 1002;
 }
 
-/* Make sure dropdown links are extra-clickable */
-nav ul li .dropdown li a {
-    display: block;
-    width: 100%;
-    padding: 15px 20px; /* Larger click target */
+.dropdown-toggle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
 }
 
-/* Navigation item styles */
-nav ul li {
-    position: relative; /* Necessary for positioning the dropdown */
-}
-
-/* Main menu link styling */
-nav ul li a {
-    color: #EAEDED;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 10px 15px;
-    transition: color 0.3s ease;
-}
-
-/* Hover effect for main menu items */
-nav ul li a:hover {
-    color: #C0392B;
-}
-
-/* Dropdown menu styles */
 nav ul li ul.dropdown {
-    display: none; /* Hide dropdowns by default */
+    display: none;
     position: absolute;
-    top: 100%; /* Position the dropdown below the parent item */
+    top: 100%;
     left: 0;
-    background-color: #2C3E50;
+    background-color: var(--primary-bg);
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    min-width: 180px; /* Optional: Makes dropdowns a little wider */
+    min-width: 180px;
 }
 
-/* Show the dropdown on hover of the parent <li> */
 nav ul li:hover .dropdown {
     display: block;
 }
 
-/* Dropdown link styles */
 nav ul li .dropdown li a {
     display: block;
-    padding: 10px 20px;
-    color: #EAEDED;
+    width: 100%;
+    padding: 15px 20px;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 1rem;
 }
 
-/* Hover effect for dropdown links */
 nav ul li .dropdown li a:hover {
-    background-color: #C0392B;
+    background-color: var(--accent-color);
 }
 
-
+/* Hero section with background image */
 .voted {
     position: relative;
-    background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat center center/cover;
+    background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat bottom right/cover;
     height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #EAEDED;
+    color: var(--text-color);
     margin-top: 100px;
-    background-position: bottom right;
 }
 
 .voted::before {
@@ -165,27 +170,26 @@ nav ul li .dropdown li a:hover {
 
 .voted h2,
 .voted p,
-.voted h3 {
+.voted h3,
+.voted a {
     position: relative;
     z-index: 1;
     margin-top: 40px;
 }
+
 .voted h3 {
-    font-style:italic;
+    font-style: italic;
     font-size: 1.3rem;
-    color:#EAEDED;
+    color: var(--text-color);
     padding-bottom: 20px;
 }
-.voted a {
-    position: relative;
-    z-index: 2;
-}
 
+/* Section styles */
 section {
     padding: 50px 0; 
     text-align: center;
-    background-color: #2C3E50;
-    color: #2C3E50;
+    background-color: var(--primary-bg);
+    color: var(--primary-bg);
 }
 
 section h2 {
@@ -204,14 +208,15 @@ section p {
     max-width: 1100px;
     padding: 40px;
     position: relative;
-    background-color: #EAEDED;
+    background-color: var(--text-color);
     display: inline-block;
 }
 
+/* Map section styles */
 .map-section {
     text-align: center;
     padding: 50px 0;
-    background-color: #2C3E50;
+    background-color: var(--primary-bg);
     color: white;
 }
 
@@ -223,10 +228,10 @@ section p {
     border-radius: 10px;
 }
 
-
+/* Footer styles */
 footer {
-    background-color: #1e1e1e;
-    color: #EAEDED;
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
     padding: 20px 0;
     font-size: 0.9rem;
     position: relative;
@@ -257,7 +262,7 @@ footer .footer-info > div {
 footer h3 {
     margin-top: 0;
     font-size: 1.1rem;
-    color: #F1C40F;
+    color: var(--highlight-color);
     margin-bottom: 8px;
 }
 
@@ -267,15 +272,14 @@ footer p {
 }
 
 footer a {
-    color: #EAEDED;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #C0392B;
+    color: var(--accent-color);
 }
 
-/* Copyright section stays at the bottom of the page */
 footer .copyright {
     width: 100%;
     text-align: center;
@@ -285,18 +289,4 @@ footer .copyright {
 footer .copyright p {
     margin: 0;
     font-size: 0.8rem;
-}
-
-.btn {
-    background-color: #C0392B;
-    color: #EAEDED;
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #A93226;
 }
