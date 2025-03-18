@@ -219,6 +219,10 @@ section p {
     color: var(--secondary-bg);
 }
 
+.map-section::before {
+    background: linear-gradient(to top, rgba(44, 62, 80, 0), rgba(44, 62, 80, 1));
+}
+
 footer {
     background-color: var(--secondary-bg);
     color: var(--text-color);
