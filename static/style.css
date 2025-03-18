@@ -53,6 +53,7 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
+    z-index: 0;
 }
 
 header nav ul li a {
