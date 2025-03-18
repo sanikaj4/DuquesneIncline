@@ -8,10 +8,10 @@
   
   /* Basic typography */
   body {
-    font-family: Arial, sans-serif;
+    font-family: Inter, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    color: #1e1e1e;
     padding-top: 80px; /* Ensures content doesn't get hidden under the fixed navbar */
   }
   
@@ -25,8 +25,8 @@
   
   /* Header styling */
   header {
-    background-color: #333;
-    color: #fff;
+    background-color: #1e1e1e;
+    color: #EAEDED;
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -57,7 +57,7 @@
   }
   
   header nav ul li a {
-    color: #fff;
+    color: #EAEDED;
     text-decoration: none;
     font-size: 1.1rem;
     padding: 10px 15px;
@@ -65,13 +65,13 @@
   }
   
   header nav ul li a:hover {
-    color: #ff6f61;
+    color: #C0392B;
   }
   
   /* Hero Section */
   .hero {
     background: url('images/hero.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #EAEDED;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -96,7 +96,7 @@
     height: 30%; /* Adjust fade length */
     background: linear-gradient(to bottom, rgba(44, 62, 80, 0) 0%, rgba(44, 62, 80, 1) 100%);
   }
-  
+
   /* Adjusting Voted Top Ten Section */
   .voted-top-ten {
     margin-top: 50px; /* Moves it down */
@@ -121,8 +121,8 @@
   }
   
   .btn {
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: #C0392B;
+    color: #EAEDED;
     padding: 12px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -131,7 +131,7 @@
   }
   
   .btn:hover {
-    background-color: #ff3b2a;
+    background-color: #C0392B;
   }
 
   .background-gradient {
@@ -159,18 +159,18 @@
   
   /* Footer Styling */
   footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #1e1e1e;
+    color: #EAEDED;
     text-align: center;
     padding: 30px;
   }
   
   footer a {
-    color: #ff6f61;
+    color: #C0392B;
     text-decoration: none;
   }
   
   footer a:hover {
-    color: #fff;
+    color: #EAEDED;
   }
   
