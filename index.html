@@ -4,7 +4,23 @@
     <link rel="stylesheet" href="static/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="static/script.js"></script>
+    <script>
+        function initMap() {
+            var duquesneIncline = { lat: 40.4397, lng: -80.0175 }; // Duquesne Incline coordinates
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: duquesneIncline,
+            });
+      
+            var marker = new google.maps.Marker({
+                position: duquesneIncline,
+                map: map,
+                title: "The Duquesne Incline"
+            });
+        }
+    </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXDyXPB8L7-64i4no39mHPg8zOKlPu4hg&callback=initMap"></script>
+      
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
