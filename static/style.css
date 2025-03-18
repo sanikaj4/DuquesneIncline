@@ -5,14 +5,16 @@
     scroll-behavior: smooth;
 }
 
+/* Body styling */
 body {
     font-family: Inter, sans-serif;
     line-height: 1.6;
     background-color: #2C3E50;
     color: #EAEDED;
-    padding-top: 80px;
+    padding-top: 120px; /* Ensure there's space below the header for clickable links */
 }
 
+/* Container styling */
 .container {
     width: 90%;
     max-width: 1100px;
@@ -20,38 +22,42 @@ body {
     padding: 20px;
 }
 
+/* Header styling */
 header {
     background-color: #1e1e1e;
     color: #EAEDED;
-    padding: 25px 0;  /* Increased padding for better coverage */
+    padding: 25px 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    min-height: 120px;  /* Ensures the header has enough height */
+    z-index: 1000; /* Ensure header is above other content */
+    min-height: 120px; /* Ensures the header has enough height */
 }
 
+/* Header container */
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Logo styling */
 header h1 {
     font-size: 1.8rem;
 }
 
+/* Navigation styling */
 header nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex; /* Horizontal layout for nav items */
 }
 
 header nav ul li {
-    display: inline-block;
-    position: relative; /* Ensure dropdown positioning works correctly */
+    position: relative; /* Needed for dropdown positioning */
 }
 
 header nav ul li a {
@@ -66,11 +72,11 @@ header nav ul li a:hover {
     color: #C0392B;
 }
 
-/* Dropdown Menu Styling */
+/* Dropdown styling */
 header nav ul li .dropdown {
     display: none; /* Hide dropdown by default */
     position: absolute;
-    top: 100%; /* Position dropdown below the parent menu item */
+    top: 100%;
     left: 0;
     background-color: #1e1e1e;
     padding: 10px 0;
@@ -78,12 +84,11 @@ header nav ul li .dropdown {
     z-index: 1;
 }
 
-/* Show dropdown when the parent menu item is hovered */
 header nav ul li:hover .dropdown {
-    display: block;
+    display: block; /* Show dropdown when hovered */
 }
 
-/* Dropdown Links Styling */
+/* Dropdown link styling */
 header nav ul li .dropdown li a {
     display: block;
     padding: 10px 20px;
@@ -96,7 +101,6 @@ header nav ul li .dropdown li a {
 header nav ul li .dropdown li a:hover {
     background-color: #C0392B;
 }
-
 
 .voted {
     position: relative;
