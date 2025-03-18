@@ -86,28 +86,18 @@ nav ul li ul.dropdown {
     min-width: 180px; /* Optional: Makes dropdowns a little wider */
 }
 
-.dropdown-toggle {
-    display: inline-block;
-    width: 20px;
-    cursor: pointer;
-}
-
 /* Show the dropdown on hover of the parent <li> */
 nav ul li:hover .dropdown {
     display: block;
 }
 
-/* Make sure dropdown links are extra-clickable */
+/* Dropdown link styles */
 nav ul li .dropdown li a {
     display: block;
-    width: 100%;
-    padding: 15px 20px; /* Larger click target */
-}
-
-/* Ensure dropdowns don't capture clicks meant for main links */
-nav ul li > a {
-    position: relative;
-    z-index: 1002; /* Higher than dropdown */
+    padding: 10px 20px;
+    color: #EAEDED;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
 /* Hover effect for dropdown links */
