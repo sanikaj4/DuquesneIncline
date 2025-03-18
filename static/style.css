@@ -27,7 +27,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     min-height: 120px;
-    /* Ensure the dropdowns are above the header */
+    /* Ensures header stays on top */
 }
 
 /* Flexbox layout for header content */
@@ -47,6 +47,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 0;
 }
 
 /* Navigation item styles */
@@ -61,7 +62,8 @@ nav ul li a {
     font-size: 1.1rem;
     padding: 10px 15px;
     transition: color 0.3s ease;
-    display: inline-block; /* Ensures that the link is clickable */
+    display: inline-block; /* Ensures the link is clickable */
+    z-index: 2; /* Ensures link remains above any potential overlapping elements */
 }
 
 /* Hover effect for main menu items */
@@ -78,7 +80,7 @@ nav ul li ul.dropdown {
     background-color: #2C3E50;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1; /* Ensure dropdown is on top of other elements */
+    z-index: 999; /* Ensure dropdown is above other content */
     min-width: 180px; /* Optional: Makes dropdowns a little wider */
 }
 
@@ -102,6 +104,15 @@ nav ul li .dropdown li a:hover {
     background-color: #C0392B;
 }
 
+/* Ensure dropdown links are not hidden or overlapped by other elements */
+nav ul li:hover .dropdown li a {
+    z-index: 9999; /* Ensures dropdown links remain clickable above other content */
+}
+
+/* Prevent dropdown from being hidden by fixed header */
+body {
+    padding-top: 80px; /* Makes space for fixed header */
+}
 
 
 .voted {
