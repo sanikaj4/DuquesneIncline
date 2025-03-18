@@ -11,7 +11,7 @@ body {
     font-family: Inter, sans-serif;
     line-height: 1.6;
     background-color: #2C3E50; /* Deep blue background */
-    color: #ffffff;
+    color: #EAEDED;
     padding-top: 80px; /* Ensures content doesn't get hidden under the fixed navbar */
 }
 
@@ -77,7 +77,7 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
+    color: #EAEDED;
     margin-top: 100px; /* Adjusted to start lower */
 }
 
@@ -94,7 +94,8 @@ header nav ul li a:hover {
 
 /* Ensuring text is above the gradient */
 .voted h2,
-.voted p {
+.voted p,
+.voted h3 {
     position: relative;
     z-index: 1;
 }
@@ -102,7 +103,6 @@ header nav ul li a:hover {
     font-style:italic;
     font-size: 1.3rem;
     color:#EAEDED
-    z-index: 1
 }
 .voted a {
     position: relative;
@@ -114,7 +114,7 @@ section {
     padding: 50px 0; /* Adds vertical padding for sections */
     text-align: center;
     background-color: #2C3E50; /* Matching the deep blue of the gradient */
-    color: #ffffff;
+    color: #EAEDED;
 }
 
 section h2 {
