@@ -124,7 +124,7 @@ section p {
 .sections {
     width: 90%;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 40;
     padding: 20px;
     position: relative;
     background-color: #EAEDED;
