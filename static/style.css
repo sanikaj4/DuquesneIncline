@@ -10,8 +10,8 @@
 body {
     font-family: Inter, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #1e1e1e;
+    background-color: #2C3E50; /* Deep blue background */
+    color: #ffffff;
     padding-top: 80px; /* Ensures content doesn't get hidden under the fixed navbar */
 }
 
@@ -77,8 +77,8 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
     color: #fff;
+    margin-top: 100px; /* Adjusted to start lower */
 }
 
 /* Gradient overlay */
@@ -99,10 +99,12 @@ header nav ul li a:hover {
     z-index: 1;
 }
 
-/* Section Spacing */
+/* Section Styling */
 section {
     padding: 50px 0; /* Adds vertical padding for sections */
     text-align: center;
+    background-color: #2C3E50; /* Matching the deep blue of the gradient */
+    color: #ffffff;
 }
 
 section h2 {
@@ -149,5 +151,5 @@ footer p {
 }
 
 .btn:hover {
-    background-color: #A93226;
+    background-color: #C0392B;
 }
