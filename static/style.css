@@ -125,6 +125,8 @@ nav ul li ul.dropdown {
 
 nav ul li:hover .dropdown {
     display: block;
+    width: 30px;
+    height: 20px;
 }
 
 nav ul li .dropdown li a {
