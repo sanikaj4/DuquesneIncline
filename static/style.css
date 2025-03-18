@@ -43,13 +43,13 @@ header h1 {
     font-size: 1.8rem;
 }
 
-header nav ul {
+header nav ul li {
     list-style-type: none;
     display: flex;
     gap: 20px;
 }
 
-header nav ul a {
+header nav ul li a {
     color: #EAEDED;
     text-decoration: none;
     font-size: 1.1rem;
@@ -57,54 +57,20 @@ header nav ul a {
     transition: color 0.3s;
 }
 
-header nav ul a:hover {
+header nav ul li a:hover {
     color: #C0392B;
 }
 
 /* Dropdown Menu Container */
-nav ul li {
-    position: relative; /* This is important for dropdown positioning */
-}
-
-nav ul li .dropdown {
-    display: none; /* Hide dropdown by default */
-    position: absolute;
+nav ul li ul.dropdown {
+    position: absolute; /* This is important for dropdown positioning */
     top: 100%; /* Position the dropdown right below the menu item */
     left: 0;
     background-color: #1e1e1e;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 1;
-}
-
-/* Show dropdown when the parent menu item is hovered */
-nav ul li:hover .dropdown {
-    display: block;
-}
-
-/* Dropdown Links */
-nav ul li .dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: #EAEDED;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
-nav ul li .dropdown a:hover {
-    background-color: #C0392B;
-}
-
-nav ul li .dropdown {
     display: none; /* Hide dropdown by default */
-    position: absolute;
-    top: 100%; /* Position the dropdown right below the menu item */
-    left: 0;
-    background-color: #1e1e1e;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1;
 }
 
 /* Show dropdown when the parent menu item is hovered */
