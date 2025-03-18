@@ -145,7 +145,6 @@ nav ul li .dropdown li a:hover {
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    margin-top: 100px;
 }
 
 .voted::before {
