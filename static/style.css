@@ -198,9 +198,8 @@ footer .footer-info {
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    margin-bottom: 20px; /* Space between footer info and copyright */
+    margin-bottom: 20px;
     padding: 0 20px;
-    text-align: center;
 }
 
 footer .footer-info > div {
@@ -211,7 +210,6 @@ footer .footer-info > div {
 footer h3 {
     margin-top: 0;
     font-size: 1.1rem;
-    text-align: center;
     color: #EAEDED;
     margin-bottom: 8px;
 }
@@ -233,6 +231,7 @@ footer a:hover {
 /* Copyright section stays at the bottom of the page */
 footer .copyright {
     width: 100%;
+    text-align: center;
     padding-top: 20px;
 }
 
