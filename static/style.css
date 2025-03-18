@@ -74,6 +74,12 @@ header h1 {
     font-size: 1.8rem;
 }
 
+nav {
+    display: flex;
+    justify-content: center; /* centers the nav items */
+    align-items: center; /* aligns the nav items vertically */
+}
+
 /* Navigation styles */
 nav ul {
     list-style: none;
@@ -82,7 +88,8 @@ nav ul {
 }
 
 nav ul li {
-    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
