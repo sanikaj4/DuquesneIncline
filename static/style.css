@@ -216,7 +216,7 @@ section p {
 }
 
 .map-section h2 {
-    color: var(--accent-color);
+    color: var(--secondary-bg);
 }
 
 footer {
