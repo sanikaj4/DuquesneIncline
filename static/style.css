@@ -136,6 +136,7 @@ nav ul li .dropdown a:hover {
     text-align: center;
     color: #EAEDED;
     margin-top: 100px;
+    background-position: bottom right;
 }
 
 .voted::before {
