@@ -14,6 +14,42 @@
     <meta name="keywords" content="Duquesne Incline, Pittsburgh">
     <meta name="description" content="Duquesne Incline Official Website">
     <title>Duquesne Incline</title>
+    <style>
+        /* Add these styles to your existing CSS */
+        .dropdown-toggle {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .dropdown-toggle::after {
+            content: "▼";
+            font-size: 0.7em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .has-dropdown {
+            display: flex;
+            align-items: center;
+        }
+        
+        .has-dropdown > a {
+            z-index: 1002;
+        }
+        
+        /* Make sure dropdown links are extra-clickable */
+        nav ul li .dropdown li a {
+            display: block;
+            width: 100%;
+            padding: 15px 20px; /* Larger click target */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -21,15 +57,17 @@
             <h1><a href="index.html"><img src="static/duquesnetextlogo.png" alt="Duquesne Incline, est. 1877" width="230" height="100"></a></h1>
             <nav>
                 <ul>
-                    <li>
+                    <li class="has-dropdown">
                         <a href="views/about.html">ABOUT</a>
+                        <span class="dropdown-toggle"></span>
                         <ul class="dropdown">
                             <li><a href="views/history.html">History</a></li>
                             <li><a href="views/faq.html">FAQs</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="has-dropdown">
                         <a href="views/visit.html">VISIT</a>
+                        <span class="dropdown-toggle"></span>
                         <ul class="dropdown">
                             <li><a href="views/hoursandfares.html">Hours and Fares</a></li>
                             <li><a href="views/toursandgroups.html">Tours/Group Bookings</a></li>
@@ -106,5 +144,40 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Add this JavaScript to handle the dropdown toggle clicks
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+            
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    // Prevent the click from propagating to parent elements
+                    e.stopPropagation();
+                    
+                    // Find the parent li element
+                    const parentLi = this.closest('li');
+                    
+                    // Find the dropdown within the parent li
+                    const dropdown = parentLi.querySelector('.dropdown');
+                    
+                    // Toggle the display of the dropdown
+                    if (dropdown.style.display === 'block') {
+                        dropdown.style.display = 'none';
+                    } else {
+                        dropdown.style.display = 'block';
+                    }
+                });
+            });
+            
+            // Close all dropdowns when clicking outside
+            document.addEventListener('click', function() {
+                const dropdowns = document.querySelectorAll('.dropdown');
+                dropdowns.forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
