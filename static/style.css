@@ -1,3 +1,4 @@
+/* General reset for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -11,17 +12,10 @@ body {
     line-height: 1.6;
     background-color: #2C3E50;
     color: #EAEDED;
-    padding-top: 80px; /* Ensure there's space below the header for clickable links */
+    padding-top: 80px; /* To prevent content from being hidden behind fixed header */
 }
 
-/* Container styling */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* Header styling */
 header {
     background-color: #1e1e1e;
     color: #EAEDED;
@@ -32,7 +26,8 @@ header {
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    min-height: 100px;
+    min-height: 120px;
+    /* Ensure the dropdowns are above the header */
 }
 
 /* Flexbox layout for header content */
@@ -66,6 +61,7 @@ nav ul li a {
     font-size: 1.1rem;
     padding: 10px 15px;
     transition: color 0.3s ease;
+    display: inline-block; /* Ensures that the link is clickable */
 }
 
 /* Hover effect for main menu items */
@@ -82,7 +78,7 @@ nav ul li ul.dropdown {
     background-color: #2C3E50;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 1; /* Ensure dropdown is on top of other elements */
     min-width: 180px; /* Optional: Makes dropdowns a little wider */
 }
 
@@ -98,12 +94,14 @@ nav ul li .dropdown li a {
     color: #EAEDED;
     text-decoration: none;
     font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 /* Hover effect for dropdown links */
 nav ul li .dropdown li a:hover {
     background-color: #C0392B;
 }
+
 
 
 .voted {
