@@ -8,3 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+function initMap() {
+    var duquesneIncline = { lat: 40.4397, lng: -80.0175 }; // Duquesne Incline coordinates
+    var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: duquesneIncline,
+    });
+
+    var marker = new google.maps.Marker({
+        position: duquesneIncline,
+        map: map,
+        title: "The Duquesne Incline"
+    });
+}
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXDyXPB8L7-64i4no39mHPg8zOKlPu4hg&callback=initMap"></script>
