@@ -48,11 +48,11 @@ header nav ul {
     gap: 20px;
 }
 
-header nav ul li {
+header nav ul {
     display: inline-block;
 }
 
-header nav ul li a {
+header nav ul a {
     color: #EAEDED;
     text-decoration: none;
     font-size: 1.1rem;
@@ -60,7 +60,7 @@ header nav ul li a {
     transition: color 0.3s;
 }
 
-header nav ul li a:hover {
+header nav ul a:hover {
     color: #C0392B;
 }
 
