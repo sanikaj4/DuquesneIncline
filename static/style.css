@@ -180,21 +180,47 @@ section p {
 footer {
     background-color: #1e1e1e;
     color: #EAEDED;
-    text-align: center;
     padding: 20px 0;
+    font-size: 0.9rem;
 }
 
-footer a {
-    color: #C0392B;
-    text-decoration: none;
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-footer a:hover {
+footer h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
     color: #EAEDED;
+    margin-bottom: 8px;
 }
 
 footer p {
     margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #EAEDED;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #C0392B;
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .contact-info, footer .parking-info, footer .hours-info {
+        margin-bottom: 15px;
+    }
 }
 
 .btn {
