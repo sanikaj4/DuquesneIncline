@@ -62,11 +62,11 @@ header nav ul a:hover {
 }
 
 /* Dropdown Menu Container */
-nav ul li {
+nav ul {
     position: relative; /* This is important for dropdown positioning */
 }
 
-nav ul li .dropdown {
+nav ul .dropdown {
     display: none; /* Hide dropdown by default */
     position: absolute;
     top: 100%; /* Position the dropdown right below the menu item */
@@ -83,7 +83,7 @@ nav ul li:hover .dropdown {
 }
 
 /* Dropdown Links */
-nav ul li .dropdown a {
+nav ul .dropdown a {
     display: block;
     padding: 10px 20px;
     color: #EAEDED;
@@ -92,11 +92,11 @@ nav ul li .dropdown a {
     transition: background-color 0.3s;
 }
 
-nav ul li .dropdown a:hover {
+nav ul .dropdown a:hover {
     background-color: #C0392B;
 }
 
-nav ul li .dropdown {
+nav ul .dropdown {
     display: none; /* Hide dropdown by default */
     position: absolute;
     top: 100%; /* Position the dropdown right below the menu item */
@@ -108,12 +108,12 @@ nav ul li .dropdown {
 }
 
 /* Show dropdown when the parent menu item is hovered */
-nav ul li:hover .dropdown {
+nav ul:hover .dropdown {
     display: block;
 }
 
 /* Dropdown Links */
-nav ul li .dropdown a {
+nav ul .dropdown a {
     display: block;
     padding: 10px 20px;
     color: #EAEDED;
@@ -122,7 +122,7 @@ nav ul li .dropdown a {
     transition: background-color 0.3s;
 }
 
-nav ul li .dropdown a:hover {
+nav ul .dropdown a:hover {
     background-color: #C0392B;
 }
 
