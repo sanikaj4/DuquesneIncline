@@ -136,7 +136,7 @@ nav ul li .dropdown li a:hover {
     background-color: var(--accent-color);
 }
 
-.voted {
+.first {
     position: relative;
     background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat bottom right/cover;
     height: 750px;
@@ -148,7 +148,7 @@ nav ul li .dropdown li a:hover {
     margin-top: 100px;
 }
 
-.voted::before {
+.first::before {
     content: "";
     position: absolute;
     top: 0;
@@ -158,15 +158,15 @@ nav ul li .dropdown li a:hover {
     background: linear-gradient(to bottom, rgba(44, 62, 80, 0), rgba(44, 62, 80, 1));
 }
 
-.voted h2,
-.voted p,
-.voted h3,
-.voted a {
+.first h2,
+.first p,
+.first h3,
+.first a {
     position: relative;
     z-index: 1;
 }
 
-.voted h3 {
+.first h3 {
     font-style: italic;
     font-size: 1.3rem;
     color: var(--text-color);
