@@ -148,35 +148,6 @@ nav ul li .dropdown li a:hover {
     margin-top: 100px;
 }
 
-.first {
-    position: relative;
-    height: 750px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--text-color);
-    margin-top: 100px;
-}
-
-.first::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(44, 62, 80, 0), rgba(44, 62, 80, 1));
-}
-
-.first h2 {
-    font-style: italic;
-    font-size: 1.3rem;
-    color: var(--text-color);
-    padding-bottom: 20px;
-    z-index: 1;
-}
-
 .voted::before {
     content: "";
     position: absolute;
@@ -200,6 +171,25 @@ nav ul li .dropdown li a:hover {
     font-size: 1.3rem;
     color: var(--text-color);
     padding-bottom: 20px;
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.nav-option {
+    text-align: center;
+}
+.nav-option img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.nav-option h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
 }
 
 section {
