@@ -169,7 +169,7 @@ nav ul li .dropdown li a:hover {
     background: linear-gradient(to bottom, rgba(44, 62, 80, 0), rgba(44, 62, 80, 1));
 }
 
-.first h3 {
+.first h2 {
     font-style: italic;
     font-size: 1.3rem;
     color: var(--text-color);
