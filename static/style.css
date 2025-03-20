@@ -54,7 +54,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     min-height: var(--header-height);
 }
