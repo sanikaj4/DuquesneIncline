@@ -157,6 +157,7 @@ nav ul li .dropdown li a:hover {
     text-align: center;
     color: var(--text-color);
     margin-top: 100px;
+    z-index: 1;
 }
 
 .first::before {
