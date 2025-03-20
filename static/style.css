@@ -179,7 +179,6 @@ nav ul li .dropdown li a:hover {
     gap: 20px;
     margin-top: 200px;
     margin-bottom: 100px;
-    color: var(--text-color);
     background: var(--primary-bg);
 }
 
@@ -198,6 +197,9 @@ nav ul li .dropdown li a:hover {
 .nav-option h2 {
     margin-top: 10px;
     font-size: 1.5em;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 section {
