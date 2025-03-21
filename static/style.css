@@ -136,6 +136,88 @@ nav ul li .dropdown li a:hover {
     background-color: var(--accent-color);
 }
 
+/* History Section Styles */
+.history-section {
+    padding: 50px 0;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
+.history-section h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.history-section p {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+}
+
+/* Collapsible Content Styles */
+.collapsible {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto 10px;
+    text-align: left;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.collapsible:hover {
+    background-color: var(--accent-hover);
+}
+
+.collapsible:after {
+    content: '+';
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.collapsible.active:after {
+    content: '-';
+}
+
+.collapsiblecontent {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: rgba(44, 62, 80, 0.8);
+    border-radius: 0 0 5px 5px;
+}
+
+.collapsible.active + .collapsiblecontent {
+    max-height: 1000px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.collapsiblecontent ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.collapsiblecontent li {
+    margin-bottom: 10px;
+}
+
 .voted {
     position: relative;
     background: url("creativecommons-pittsburghviewwithincline.jpg") no-repeat bottom right/cover;
@@ -244,39 +326,6 @@ section p {
     border-radius: 10px;
 }
 
-.history-container {
-    display: block;
-    padding: 20px;
-}
-
-.collapsible {
-    display: block;
-    margin-top: 20px;
-}
-
-.collapsiblecontent {
-    margin-top: 10px;
-    display: none;
-}
-
-.collapsible {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-.collapsible:hover {
-    background-color: #45a049;
-}
-
-.collapsible.active + .collapsiblecontent {
-    display: block;
-}
-
 footer {
     background-color: var(--secondary-bg);
     color: var(--text-color);
@@ -337,4 +386,29 @@ footer .copyright {
 footer .copyright p {
     margin: 0;
     font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .footer-info {
+        flex-direction: column;
+    }
+    
+    .footer-info > div {
+        margin: 15px 0;
+    }
 }
