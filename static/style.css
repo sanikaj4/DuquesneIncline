@@ -205,6 +205,7 @@ nav ul li .dropdown li a:hover {
     max-height: 1000px;
     padding: 20px;
     margin-bottom: 20px;
+    align-items: left;
 }
 
 .collapsiblecontent ul {
@@ -214,7 +215,6 @@ nav ul li .dropdown li a:hover {
 
 .collapsiblecontent li {
     margin-bottom: 10px;
-    align-items: left;
 }
 
 .voted {
