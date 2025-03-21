@@ -199,13 +199,13 @@ nav ul li .dropdown li a:hover {
     transition: max-height 0.3s ease-out;
     background-color: rgba(44, 62, 80, 0.8);
     border-radius: 0 0 5px 5px;
-    align-items: left;
 }
 
 .collapsible.active + .collapsiblecontent {
     max-height: 1000px;
     padding: 20px;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .collapsiblecontent ul {
