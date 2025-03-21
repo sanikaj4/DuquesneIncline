@@ -203,7 +203,6 @@ nav ul li .dropdown li a:hover {
 
 .collapsible.active + .collapsiblecontent {
     max-height: 1000px;
-    padding: 20px;
     margin-bottom: 20px;
     text-align: left;
 }
