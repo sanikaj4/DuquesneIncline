@@ -136,7 +136,6 @@ nav ul li .dropdown li a:hover {
     background-color: var(--accent-color);
 }
 
-/* History Section Styles */
 .history-section {
     padding: 50px 0;
     background-color: var(--primary-bg);
@@ -159,7 +158,6 @@ nav ul li .dropdown li a:hover {
     font-size: 1.1rem;
 }
 
-/* Collapsible Content Styles */
 .collapsible {
     background-color: var(--accent-color);
     color: white;
@@ -216,6 +214,7 @@ nav ul li .dropdown li a:hover {
 
 .collapsiblecontent li {
     margin-bottom: 10px;
+    align-items: left;
 }
 
 .voted {
