@@ -373,7 +373,7 @@ section p {
 #attractions-header2 h2,
 #attractions-header3 h2 {
     color: var(--primary-bg);
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 .collapsiblecontent ul li {
