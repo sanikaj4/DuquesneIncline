@@ -231,7 +231,7 @@ nav ul li .dropdown li a:hover {
 
 .attractions {
     position: relative;
-    background: url("./pittsburghriverview.jpg") no-repeat bottom right/cover;
+    background: url("./pittsburghriverview.jpg") no-repeat top/cover;
     height: 750px;
     display: flex;
     justify-content: center;
