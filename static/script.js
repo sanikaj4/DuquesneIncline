@@ -47,7 +47,7 @@ function validateForm() {
     const name = document.getElementById("name");
     const email = document.getElementById("email");
     const phone = document.getElementById("phone");
-    const sms = document.getElementById("sms");
+    const checkbox = document.getElementById("checkbox");
     const zip = document.getElementById("zip");
 
     if (!form.checkValidity()) {
