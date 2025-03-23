@@ -359,6 +359,14 @@ section p {
     color: var(--text-color);
 }
 
+#city-tours p {
+    color: var(--text-color);
+}
+
+#city-tours a {
+    color: var(--accent-color);
+}
+
 .collapsiblecontent ul li {
     color: var(--text-color);
 }
