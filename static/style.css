@@ -356,7 +356,7 @@ section p {
     color: var(--text-color);
 }
 
-.sections p {
+.sections a {
     color: var(--highlight-color);
 }
 
