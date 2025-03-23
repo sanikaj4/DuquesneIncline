@@ -437,18 +437,6 @@ section p {
     margin-right: auto;
 }
 
-.gift-category h2 {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 15px 20px;
-    font-size: 1.3rem;
-    border: none;
-    border-radius: 5px;
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
 .item-card {
     background-color: rgba(44, 62, 80, 0.8);
     border-radius: 10px;
@@ -487,8 +475,8 @@ section p {
 }
 
 .featured-item {
-    background-color: var(--primary-bg);
-    border: 2px solid var(--secondary-bg);
+    background-color: rgba(193, 57, 43, 0.3);
+    border: 2px solid var(--accent-color);
 }
 
 .featured-badge {
