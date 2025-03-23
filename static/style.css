@@ -637,7 +637,7 @@ footer .copyright p {
     
     nav ul {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         margin-top: 15px;
     }
     
