@@ -196,9 +196,10 @@ nav ul li .dropdown li a:hover {
     padding: 0 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: all 0.3s ease-out;
     background-color: rgba(44, 62, 80, 0.8);
     border-radius: 0 0 5px 5px;
+    opacity: 0;
 }
 
 .collapsible.active + .collapsiblecontent {
@@ -206,6 +207,7 @@ nav ul li .dropdown li a:hover {
     padding: 20px;
     margin-bottom: 20px;
     text-align: left;
+    opacity: 1;
 }
 
 .collapsiblecontent ul {
@@ -330,6 +332,7 @@ section {
     text-align: center;
     background-color: var(--primary-bg);
     color: var(--primary-bg);
+    overflow: hidden;
 }
 
 section h2 {
@@ -348,7 +351,8 @@ section p {
     padding: 40px;
     position: relative;
     background-color: var(--text-color);
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
 }
 
 .sections p {
