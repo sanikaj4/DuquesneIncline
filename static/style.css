@@ -365,7 +365,7 @@ section p {
 
 #city-tours p,
 #dining p {
-    color: var(--text-color);
+    color: var(--primary-bg);
 }
 
 #city-tours a,
