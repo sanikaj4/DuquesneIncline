@@ -242,7 +242,7 @@ nav ul li .dropdown li a:hover {
 .voted h2,
 .voted p,
 .voted h3,
-.voted a {
+.faq-category, .voted a {
     position: relative;
     z-index: 1;
 }
