@@ -318,7 +318,7 @@ nav ul li .dropdown li a:hover {
     font-weight: bold;
 }
 
-.attractions-sub-nav {
+#attractions-headers {
     display: flex;
     justify-content: center;
     gap: 20px;
