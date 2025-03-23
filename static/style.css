@@ -200,7 +200,6 @@ nav ul li .dropdown li a:hover {
     background-color: rgba(44, 62, 80, 0.8);
     border-radius: 0 0 5px 5px;
     opacity: 0;
-    color: var(--text-color)
 }
 
 .collapsible.active + .collapsiblecontent {
@@ -218,6 +217,10 @@ nav ul li .dropdown li a:hover {
 
 .collapsiblecontent li {
     margin-bottom: 10px;
+}
+
+.collapsiblecontent p {
+    color: var(--text-color)
 }
 
 .voted {
