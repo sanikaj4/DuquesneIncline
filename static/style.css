@@ -369,7 +369,7 @@ section p {
 
 #city-tours p,
 #dining p {
-    color: var(--primary-bg);
+    color: var(--text-color);
 }
 
 #city-tours a,
