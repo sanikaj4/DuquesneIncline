@@ -602,7 +602,7 @@ section p {
 .get-involved-hero {
     position: relative;
     background: url("../static/duquesne-volunteers.jpg") no-repeat center/cover;
-    height: 650px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
