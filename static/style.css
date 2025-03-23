@@ -377,6 +377,7 @@ section p {
 }
 
 .faq-content {
+    margin-top: 200px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
