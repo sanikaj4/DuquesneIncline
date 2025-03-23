@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (targetElement) {
                 const offsetPosition = targetElement.getBoundingClientRect().top + 
-                                     window.pageYOffset - 
+                                     window.scrollY - 
                                      120;
                 
                 window.scrollTo({
