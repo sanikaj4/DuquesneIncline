@@ -447,7 +447,6 @@ section p {
     text-align: left;
     font-weight: bold;
     margin-bottom: 20px;
-    min-width: 100px;
 }
 
 .item-card {
@@ -455,7 +454,7 @@ section p {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    width: 280px;
+    width: 800px;
     transition: transform 0.3s;
 }
 
