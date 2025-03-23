@@ -22,3 +22,9 @@ document.querySelector(".collapsible").addEventListener("click", function() {
         content.style.display = "flex";
     }
 });
+
+$(document).ready(function() {
+    $(".category-title").click(function() {
+        $(this).toggleClass("active");
+    });
+});
