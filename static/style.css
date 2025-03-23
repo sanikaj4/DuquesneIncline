@@ -238,7 +238,17 @@ nav ul li .dropdown li a:hover {
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    margin-top: 20px;
+    margin-top: 120px;
+}
+
+.attractions::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(44, 62, 80, 0), rgba(44, 62, 80, 1));
 }
 
 .voted::before {
