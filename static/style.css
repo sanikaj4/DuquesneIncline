@@ -359,12 +359,14 @@ section p {
     color: var(--text-color);
 }
 
-#city-tours p {
+#city-tours p,
+#dining p {
     color: var(--text-color);
 }
 
-#city-tours a {
-    color: var(--accent-color);
+#city-tours a,
+#dining a {
+    color: var(--highlight-color);
 }
 
 .collapsiblecontent ul li {
