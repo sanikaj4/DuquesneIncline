@@ -250,7 +250,6 @@ nav ul li .dropdown li a:hover {
 .faq-category a {
     color: var(--highlight-color);
     position: relative;
-    margin-bottom: 100px;
     z-index: 1;
 }
 
