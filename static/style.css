@@ -438,7 +438,7 @@ section p {
 }
 
 .gift-category h2 {
-    background-color: var(--accent-color);
+    background-color: var(--primary-bg);
     color: white;
     padding: 15px 20px;
     font-size: 1.3rem;
@@ -480,12 +480,6 @@ section p {
     margin-bottom: 15px;
 }
 
-.price {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: var(--highlight-color);
-}
-
 .shop-intro {
     max-width: 800px;
     margin: 0 auto 40px;
@@ -494,7 +488,7 @@ section p {
 
 .featured-item {
     background-color: rgba(193, 57, 43, 0.3);
-    border: 2px solid var(--accent-color);
+    border: 2px solid var(--primary-bg);
 }
 
 .featured-badge {
