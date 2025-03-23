@@ -690,6 +690,7 @@ section p {
 
 .society-content ul li {
     text-align: left;
+    justify-content: center;
 }
 
 .form-group {
