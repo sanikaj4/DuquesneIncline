@@ -675,7 +675,7 @@ section p {
 
 .society-content,
 .mailing-list-content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: rgba(30, 30, 30, 0.7);
     padding: 40px;
