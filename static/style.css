@@ -626,7 +626,7 @@ section p {
     position: relative;
     z-index: 1;
     max-width: 800px;
-    max-height: 400px;
+    max-height: 200px;
     margin: 0 auto;
 }
 
