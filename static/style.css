@@ -688,6 +688,10 @@ section p {
     text-align: left;
 }
 
+.society-content ul li {
+    text-align: left;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
