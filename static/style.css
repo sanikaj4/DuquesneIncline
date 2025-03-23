@@ -294,6 +294,15 @@ nav ul li .dropdown li a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background: var(--primary-bg);
+}
+
+.attractions-sub-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     margin-bottom: 100px;
     background: var(--primary-bg);
 }
