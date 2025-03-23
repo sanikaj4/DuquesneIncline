@@ -688,9 +688,15 @@ section p {
     text-align: left;
 }
 
-.society-content ul li {
+.society-content ul {
+    list-style-position: inside;
+    width: fit-content;
+    margin: 0 auto;
     text-align: left;
-    justify-content: center;
+}
+
+.society-content ul li {
+    margin-bottom: 10px;
 }
 
 .form-group {
