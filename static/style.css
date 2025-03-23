@@ -369,6 +369,12 @@ section p {
     color: var(--highlight-color);
 }
 
+#attractions-header1 h2,
+#attractions-header2 h2,
+#attractions-header3 h2 {
+    color: var(--primary-bg);
+}
+
 .collapsiblecontent ul li {
     color: var(--text-color);
 }
