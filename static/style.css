@@ -352,6 +352,14 @@ section p {
     display: inline-block;
 }
 
+.sections p {
+    color: var(--text-color);
+}
+
+.sections p {
+    color: var(--highlight-color);
+}
+
 .map-section {
     text-align: center;
     background-color: var(--secondary-bg);
