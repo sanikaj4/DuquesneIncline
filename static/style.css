@@ -313,8 +313,8 @@ nav ul li .dropdown li a:hover {
     text-align: center;
 }
 .nav-option img {
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 300px;
     border-radius: 10px;
 }
 .nav-option h2 {
@@ -485,7 +485,7 @@ section p {
 }
 
 .item-card img {
-    width: 240px;
+    width: auto;
     height: 240px;
     object-fit: cover;
     border-radius: 5px;
