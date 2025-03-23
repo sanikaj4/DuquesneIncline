@@ -438,7 +438,7 @@ section p {
 }
 
 .gift-category h2 {
-    background-color: var(--primary-bg);
+    background-color: var(--accent-color);
     color: white;
     padding: 15px 20px;
     font-size: 1.3rem;
@@ -487,8 +487,8 @@ section p {
 }
 
 .featured-item {
-    background-color: rgba(193, 57, 43, 0.3);
-    border: 2px solid var(--primary-bg);
+    background-color: var(--primary-bg);
+    border: 2px solid var(--accent-color);
 }
 
 .featured-badge {
