@@ -353,7 +353,7 @@ section p {
 }
 
 .sections p {
-    color: var(--primary-bg);
+    color: var(--text-color);
 }
 
 .sections a {
