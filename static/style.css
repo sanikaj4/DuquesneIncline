@@ -603,6 +603,30 @@ section p {
     margin-bottom: 10px;
 }
 
+.visit-hero {
+    position: relative;
+    background: var(--primary-bg);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 60px;
+}
+
+.about-hero {
+    position: relative;
+    background: var(--primary-bg);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 60px;
+}
+
 .get-involved-hero {
     position: relative;
     background: url("../static/getinvolved.jpg") no-repeat center/cover;
