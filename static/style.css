@@ -643,7 +643,6 @@ section p {
 .society-section,
 .mailing-list-section {
     background-color: var(--primary-bg);
-    padding: 60px 0;
 }
 
 .society-content,
@@ -651,7 +650,6 @@ section p {
     max-width: 800px;
     margin: 0 auto;
     background-color: rgba(30, 30, 30, 0.7);
-    padding: 40px;
     border-radius: 10px;
     color: var(--text-color);
 }
