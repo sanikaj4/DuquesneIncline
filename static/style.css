@@ -691,6 +691,7 @@ section p {
 .society-content ul li {
     text-align: left;
     padding-left: 20px;
+    align-items: center;
 }
 
 .form-group {
