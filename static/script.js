@@ -34,9 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
-                const offsetPosition = targetElement.getBoundingClientRect().top + 
-                                     window.scrollY - 
-                                     120;
+                const offsetPosition = targetElement.getBoundingClientRect().top - 120;
                 
                 window.scrollBy(0, offsetPosition)
             }
