@@ -243,6 +243,10 @@ nav ul li .dropdown li a:hover {
     margin-top: 120px;
 }
 
+.attractions h2 {
+    font-size: 3rem;
+}
+
 .attractions::before {
     content: "";
     position: absolute;
