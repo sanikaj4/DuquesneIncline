@@ -352,11 +352,11 @@ section p {
 }
 
 .sections p {
-    color: var(--text-color);
+    color: var(--primary-bg);
 }
 
 .sections a {
-    color: var(--highlight-color);
+    color: var(--text-color);
 }
 
 .collapsiblecontent ul li {
