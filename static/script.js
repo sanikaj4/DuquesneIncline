@@ -38,10 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                      window.scrollY - 
                                      120;
                 
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
+                window.scrollBy(0, offsetPosition)
             }
         });
     });
