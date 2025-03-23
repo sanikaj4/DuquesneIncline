@@ -488,7 +488,7 @@ section p {
 
 .featured-item {
     background-color: var(--primary-bg);
-    border: 2px solid var(--accent-color);
+    border: 2px solid var(--secondary-bg);
 }
 
 .featured-badge {
