@@ -308,7 +308,7 @@ nav ul li .dropdown li a:hover {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background: var(--text-color);
+    background: var(--primary-bg);
 }
 
 .sub-nav::before {
