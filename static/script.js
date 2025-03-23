@@ -47,19 +47,32 @@ function validateForm() {
     const name = document.getElementById("name");
     const email = document.getElementById("email");
     const phone = document.getElementById("phone");
-    const checkbox = document.getElementById("checkbox");
+    const sms = document.getElementById("sms");
     const zip = document.getElementById("zip");
-
-    if (!form.checkValidity()) {
-        form.reportValidity();
-        message.innerHTML = "Please fill out the form correctly so I can get back to you :)";
+    const message = document.getElementById("message");
+    const form = document.querySelector(".mailing-form");
+    if (name.value === "" || email.value === "") {
+        message.innerHTML = "Please fill out all required fields.";
         message.style.color = "red";
-    } else {
-        message.innerHTML = "Form submitted successfully!";
-        message.style.color = "green";
-        setTimeout(() => {
-            form.reset();
-            message.innerHTML = "";
-        }, 500);
+        return false;
     }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email.value)) {
+        message.innerHTML = "Please enter a valid email address.";
+        message.style.color = "red";
+        return false;
+    }
+    if (sms.checked && phone.value === "") {
+        message.innerHTML = "Phone number is required for SMS notifications.";
+        message.style.color = "red";
+        return false;
+    }
+    message.innerHTML = "Form submitted successfully!";
+    message.style.color = "green";
+    setTimeout(() => {
+        form.reset();
+        message.innerHTML = "";
+    }, 2000);
+    
+    return true;
 }
