@@ -219,10 +219,6 @@ nav ul li .dropdown li a:hover {
     margin-bottom: 10px;
 }
 
-.collapsiblecontent p {
-    color: var(--text-color)
-}
-
 .voted {
     position: relative;
     background: url("./creativecommons-pittsburghviewwithincline.jpg") no-repeat bottom right/cover;
@@ -369,7 +365,7 @@ section p {
 
 #city-tours p,
 #dining p {
-    color: var(--text-color);
+    color: var(--primary-bg);
 }
 
 #city-tours a,
