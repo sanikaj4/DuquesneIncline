@@ -261,6 +261,14 @@ nav ul li .dropdown li a:hover {
     background: linear-gradient(to bottom, rgba(44, 62, 80, 0), rgba(44, 62, 80, 1));
 }
 
+.attractions h2,
+.attractions p,
+.attractions h3,
+.attractions a {
+    position: relative;
+    z-index: 1;
+}
+
 .voted h2,
 .voted p,
 .voted h3,
