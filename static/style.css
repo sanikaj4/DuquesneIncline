@@ -605,7 +605,7 @@ section p {
 .visit-hero {
     position: relative;
     background: var(--primary-bg);
-    height: 250px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -617,7 +617,7 @@ section p {
 .about-hero {
     position: relative;
     background: var(--primary-bg);
-    height: 250px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
