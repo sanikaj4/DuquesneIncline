@@ -373,6 +373,17 @@ section p {
     color: var(--highlight-color);
 }
 
+#city-tours1 p,
+#city-tours2 p,
+#city-tours3 p,
+#city-tours4 p,
+#dining1 p,
+#dining2 p,
+#dining3 p,
+#dining4 p {
+    color: var(--text-color);
+}
+
 #attractions-header1 h2,
 #attractions-header2 h2,
 #attractions-header3 h2 {
