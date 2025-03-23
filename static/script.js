@@ -26,14 +26,22 @@ $(document).ready(function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll(".collapsible").forEach(function(button) {
-        button.addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const offsetPosition = targetElement.getBoundingClientRect().top + 
+                                     window.pageYOffset - 
+                                     120;
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
             }
         });
     });
