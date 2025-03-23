@@ -41,3 +41,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+function validateForm() {
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+    const sms = document.getElementById("sms");
+    const zip = document.getElementById("zip");
+
+    if (!form.checkValidity()) {
+        form.reportValidity();
+        message.innerHTML = "Please fill out the form correctly so I can get back to you :)";
+        message.style.color = "red";
+    } else {
+        message.innerHTML = "Form submitted successfully!";
+        message.style.color = "green";
+        setTimeout(() => {
+            form.reset();
+            message.innerHTML = "";
+        }, 500);
+    }
+}
