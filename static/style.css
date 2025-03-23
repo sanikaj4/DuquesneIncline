@@ -60,7 +60,6 @@ header {
 }
 
 header .container {
-    margin-top: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,6 +159,7 @@ nav ul li .dropdown li a:hover {
 }
 
 .collapsible {
+    margin-top: 200px;
     background-color: var(--accent-color);
     color: white;
     padding: 15px 20px;
