@@ -303,9 +303,6 @@ nav ul li .dropdown li a:hover {
     justify-content: center;
     gap: 20px;
     background: var(--text-color);
-}
-
-.nav-option a h2 {
     color: var(--primary-bg)
 }
 
