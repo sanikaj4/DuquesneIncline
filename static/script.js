@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll(".gallery img");
     let currentIndex = 0;
     let modal;
+
     function openModal(index) {
         currentIndex = index;
         modal = document.createElement("div");
@@ -64,15 +65,21 @@ document.addEventListener('DOMContentLoaded', function() {
             <button class="next">&gt;</button>
         `;
         document.body.appendChild(modal);
+        document.body.classList.add("modal-open");
+
+
         document.querySelector(".close").addEventListener("click", closeModal);
         document.querySelector(".prev").addEventListener("click", () => navigate(-1));
         document.querySelector(".next").addEventListener("click", () => navigate(1));
         document.addEventListener("keydown", keyControls);
     }
+
     function closeModal() {
         modal.remove();
+        document.body.classList.remove("modal-open"); // Allow scrolling again
         document.removeEventListener("keydown", keyControls);
     }
+
     function navigate(direction) {
         currentIndex += direction;
         if (currentIndex < 0) {
@@ -82,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         document.querySelector(".modal-img").src = images[currentIndex].src;
     }
+
     function keyControls(event) {
         if (event.key === "ArrowRight") {
             navigate(1);
@@ -91,10 +99,12 @@ document.addEventListener('DOMContentLoaded', function() {
             closeModal();
         }
     }
+
     images.forEach((image, index) => {
         image.addEventListener("click", () => openModal(index));
     });
 });
+    
 
 
 function validateForm() {

@@ -907,21 +907,32 @@ section p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    z-index: 1000; 
+    overflow: hidden;
 }
 
-.modal img {
-    width: 60%;
+.modal-img {
+    width: 80%;
     max-width: 600px;
     border-radius: 5px;
 }
 
 .close {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 20px;
+    right: 30px;
     font-size: 30px;
     color: white;
     cursor: pointer;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px 12px;
+    border-radius: 50%;
+}
+
+.close:hover {
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .prev, .next {
@@ -941,6 +952,10 @@ section p {
 
 .prev:hover, .next:hover {
     background: rgba(255, 255, 255, 0.8);
+}
+
+body.modal-open {
+    overflow: hidden;
 }
 
 footer {
