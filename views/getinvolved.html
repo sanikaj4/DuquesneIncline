@@ -76,34 +76,35 @@
             <div class="mailing-list-content">
                 <h2>Join Our Mailing List</h2>
                 <p>Stay up to date with the latest news, events, and special offers from the Duquesne Incline. Subscribe to our mailing list to receive regular updates.</p>
-                
+    
                 <form class="mailing-form">
                     <div class="form-group">
                         <label for="name">NAME<span class="required">*</span></label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    
+    
                     <div class="form-group">
                         <label for="email">EMAIL ADDRESS<span class="required">*</span></label>
                         <input type="email" id="email" name="email" required>
                     </div>
-                    
+    
                     <div class="form-group">
                         <label for="phone">PHONE NUMBER</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
-                    
+    
                     <div class="checkbox-group">
                         <input type="checkbox" id="sms" name="sms">
                         <label for="sms">I would like to receive messages via SMS text.</label>
                     </div>
-                    
+    
                     <div class="form-group">
                         <label for="zip">ZIP CODE</label>
                         <input type="text" id="zip" name="zip">
                     </div>
-                    
-                    <button type="button" class="submit-btn" onclick="validateForm()">SUBMIT</button>
+    
+                    <!-- Updated the button to avoid using onclick and ensure jQuery handles submission -->
+                    <button type="submit" class="submit-btn">SUBMIT</button>
                 </form>
                 <p id="message"></p>
             </div>
