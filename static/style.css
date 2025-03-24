@@ -140,6 +140,7 @@ nav ul li .dropdown li a:hover {
     padding: 50px 0;
     background-color: var(--primary-bg);
     color: var(--text-color);
+    margin-top: 120px;
 }
 
 .history-section h1 {
@@ -227,7 +228,7 @@ nav ul li .dropdown li a:hover {
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    margin-top: 40px;
+    margin-top: 120px;
 }
 
 .attractions {
@@ -239,7 +240,7 @@ nav ul li .dropdown li a:hover {
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    margin-top: 40px;
+    margin-top: 120px;
 }
 
 .about {
@@ -251,7 +252,7 @@ nav ul li .dropdown li a:hover {
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    margin-top: 40px;
+    margin-top: 120px;
 }
 
 .attractions h2,
@@ -537,6 +538,7 @@ section p {
     padding: 50px 0;
     background-color: var(--primary-bg);
     color: var(--text-color);
+    margin-top: 120px;
 }
 
 .faq-section h1 {
@@ -614,6 +616,7 @@ section p {
     padding: 50px 0;
     background-color: var(--primary-bg);
     color: var(--text-color);
+    margin-top: 120px;
 }
 
 .gift-shop-section h1 {
@@ -727,7 +730,7 @@ section p {
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    margin-top: 40px;
+    margin-top: 140px;
 }
 
 .about-hero {
@@ -739,7 +742,7 @@ section p {
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    margin-top: 40px;
+    margin-top: 140px;
 }
 
 .get-involved-hero {
@@ -751,7 +754,7 @@ section p {
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    margin-top: 40px;
+    margin-top: 120px;
 }
 
 .get-involved-hero::before {
@@ -900,7 +903,7 @@ section p {
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    margin-top: 40px;
+    margin-top: 120px;
 }
 
 .media-hero::before {
