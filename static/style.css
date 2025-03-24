@@ -929,8 +929,6 @@ section p {
     background: rgba(255, 255, 255, 0.3);
     padding: 5px 12px;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
 }
 
 .close:hover {
