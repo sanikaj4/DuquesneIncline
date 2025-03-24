@@ -35,9 +35,32 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (targetElement) {
                 const offsetPosition = targetElement.getBoundingClientRect().top - 250;
-                
-                window.scrollBy(0, offsetPosition)
+                window.scrollBy(0, offsetPosition);
             }
+        });
+    });
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            tabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+            tabPanes.forEach(pane => pane.classList.remove('active'));
+            const tabId = this.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+    const images = document.querySelectorAll(".gallery img");
+    images.forEach(image => {
+        image.addEventListener("click", function() {
+            const modal = document.createElement("div");
+            modal.classList.add("modal");
+            modal.innerHTML = `<img src="${image.src}" alt="Large View"><span class="close">&times;</span>`;
+            document.body.appendChild(modal);
+
+            document.querySelector(".close").addEventListener("click", () => {
+                modal.remove();
+            });
         });
     });
 });
