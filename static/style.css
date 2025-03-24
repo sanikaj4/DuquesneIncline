@@ -1044,7 +1044,7 @@ body.modal-open {
 
 footer {
     background-color: var(--secondary-bg);
-    height: 200px
+    height: 100px
     display: flex;
     color: var(--text-color);
     padding: 20px 0;
