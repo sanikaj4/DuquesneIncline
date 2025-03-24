@@ -474,7 +474,7 @@ section p {
 .weather-container {
     border-radius: 8px;
     padding: 20px;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -1127,9 +1127,5 @@ footer .copyright p {
     
     .footer-info {
         flex-direction: column;
-    }
-    
-    .footer-info > div {
-        margin: 15px 0;
     }
 }
