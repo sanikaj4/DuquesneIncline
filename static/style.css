@@ -275,6 +275,7 @@ nav ul li .dropdown li a:hover {
     z-index: 1;
 }
 
+.voted h1,
 .voted h2,
 .voted p,
 .voted h3,
@@ -287,6 +288,12 @@ nav ul li .dropdown li a:hover {
     color: var(--highlight-color);
     position: relative;
     z-index: 1;
+}
+
+.voted h1 {
+    font-size: 2.6rem;
+    color: var(--text-color);
+    padding-bottom: 20px;
 }
 
 .voted h3 {
