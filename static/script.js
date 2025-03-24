@@ -147,7 +147,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 $(document).ready(function() {
     $('.submit-btn').on('click', function() {
-        // Select elements using jQuery
         const $name = $('#name');
         const $email = $('#email');
         const $phone = $('#phone');

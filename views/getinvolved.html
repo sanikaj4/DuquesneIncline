@@ -80,7 +80,7 @@
                 <form class="mailing-form">
                     <div class="form-group">
                         <label for="name">NAME<span class="required">*</span></label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" minlength="2" required>
                     </div>
                     
                     <div class="form-group">
@@ -90,7 +90,7 @@
                     
                     <div class="form-group">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}>
                     </div>
                     
                     <div class="checkbox-group">
@@ -100,7 +100,7 @@
                     
                     <div class="form-group">
                         <label for="zip">ZIP CODE</label>
-                        <input type="text" id="zip" name="zip">
+                        <input type="text" id="zip" name="zip" minlength="5" maxlength="5">
                     </div>
                     
                     <button type="button" class="submit-btn">SUBMIT</button>
