@@ -573,7 +573,7 @@ section p {
 
 .featured-item {
     background-color: rgba(44, 62, 80, 0.3);
-    border: 4px dashed var(--secondary-bg);
+    border: 4px dashed var(--accent-color);
 }
 
 .featured-badge {
