@@ -295,7 +295,7 @@ nav ul li .dropdown li a:hover {
     color: var(--text-color);
     text-align: center;
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
