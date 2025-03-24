@@ -291,7 +291,6 @@ nav ul li .dropdown li a:hover {
 .about a {
     position: relative;
     z-index: 1;
-    text-decoration: none;
 }
 
 .voted h1,
