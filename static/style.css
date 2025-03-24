@@ -920,7 +920,7 @@ section p {
 
 .close {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 30px;
     font-size: 30px;
     color: white;
@@ -929,6 +929,8 @@ section p {
     background: rgba(255, 255, 255, 0.3);
     padding: 5px 12px;
     border-radius: 50%;
+    width: 20px;
+    height: 20px;
 }
 
 .close:hover {
