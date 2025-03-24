@@ -103,6 +103,44 @@ document.addEventListener('DOMContentLoaded', function() {
     images.forEach((image, index) => {
         image.addEventListener("click", () => openModal(index));
     });
+
+    const lat = 40.4406;
+    const lon = -79.9959;
+    fetch(`https://api.weather.gov/points/${lat},${lon}`)
+        .then(response => response.json())
+        .then(data => {
+            const gridUrl = data.properties.forecast;
+            return fetch(gridUrl);
+        })
+        .then(response => response.json())
+        .then(data => {
+            const weatherWidget = document.getElementById('weather-widget');
+            
+            if (data && data.properties && data.properties.periods) {
+                const currentPeriod = data.properties.periods[0];
+                
+                weatherWidget.innerHTML = `
+                    <div class="weather-info">
+                        <h3>Pittsburgh, PA</h3>
+                        <div class="temperature">${currentPeriod.temperature}°${currentPeriod.temperatureUnit}</div>
+                        <div class="description">${currentPeriod.shortForecast}</div>
+                        <div class="weather-icon">
+                            <img src="${currentPeriod.icon}" alt="${currentPeriod.shortForecast}" width="100">
+                        </div>
+                        <div class="details">
+                            <p>Wind: ${currentPeriod.windSpeed} ${currentPeriod.windDirection}</p>
+                            <p>${currentPeriod.detailedForecast}</p>
+                        </div>
+                    </div>
+                `;
+            } else {
+                weatherWidget.innerHTML = '<p>Weather information unavailable</p>';
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching weather data:', error);
+            document.getElementById('weather-widget').innerHTML = '<p>Unable to load weather information</p>';
+        });
 });
     
 
