@@ -778,7 +778,7 @@ section p {
 
 .media-hero {
     position: relative;
-    background: url("../static/media.jpg") no-repeat center/cover;
+    background: url("../static/media.jpg") no-repeat bottom/cover;
     height: 500px;
     display: flex;
     justify-content: center;
