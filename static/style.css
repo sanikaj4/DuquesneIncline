@@ -35,7 +35,6 @@ body {
 .btn {
     background-color: var(--accent-color);
     color: var(--text-color);
-    padding: 12px 20px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
@@ -391,7 +390,6 @@ nav ul li .dropdown li a:hover {
     display: flex;
     justify-content: center;
     background: var(--primary-bg);
-    gap: -110px;
 }
 
 .about-sub-nav, .visit-sub-nav {
