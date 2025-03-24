@@ -297,8 +297,12 @@ section p, .history-section p {
     z-index: 1;
 }
 
-.attractions h2, .sections h2 {
+.attractions h2 {
     color: var(--text-color);
+}
+
+.sections h2 {
+    color: var(--primary-bg);
 }
 
 .voted h1 {
