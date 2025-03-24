@@ -380,7 +380,7 @@ nav ul li .dropdown li a:hover {
 .about-sub-nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 100px;
     background: var(--primary-bg);
 }
 
