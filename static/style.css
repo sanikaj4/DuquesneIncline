@@ -486,11 +486,6 @@ section p {
     align-items: center;
 }
 
-.weather-loading {
-    color: #666;
-    font-style: italic;
-}
-
 .map-section {
     text-align: center;
     background-color: var(--secondary-bg);
