@@ -290,6 +290,10 @@ nav ul li .dropdown li a:hover {
     z-index: 1;
 }
 
+.faq-category h2 {
+    color: var(--highlight-color);
+}
+
 .fare-table {
     width: 100%;
     border-collapse: collapse;
