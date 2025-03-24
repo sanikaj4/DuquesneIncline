@@ -1044,6 +1044,7 @@ body.modal-open {
 
 footer {
     background-color: var(--secondary-bg);
+    display: flex;
     color: var(--text-color);
     padding: 20px 0;
     font-size: 0.9rem;
@@ -1127,5 +1128,9 @@ footer .copyright p {
     
     .footer-info {
         flex-direction: column;
+    }
+    
+    .footer-info > div {
+        margin: 15px 0;
     }
 }
