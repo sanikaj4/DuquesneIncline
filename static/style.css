@@ -408,6 +408,7 @@ nav ul li .dropdown li a:hover {
     height: 300px;
     width: auto;
     border-radius: 10px;
+    align-items: center;
 }
 .nav-option h2 {
     margin-top: 10px;
