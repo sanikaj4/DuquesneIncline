@@ -298,6 +298,7 @@ section p, .history-section p {
 
 .sections h2 {
     color: var(--primary-bg);
+    z-index: 1;
 }
 
 .voted h1 {
