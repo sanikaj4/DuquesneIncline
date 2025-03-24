@@ -406,6 +406,7 @@ nav ul li .dropdown li a:hover {
 }
 .nav-option img {
     height: 300px;
+    width: 100px;
     border-radius: 10px;
 }
 .nav-option h2 {
