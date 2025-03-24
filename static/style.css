@@ -469,7 +469,8 @@ section p {
 #attractions-header2 h2,
 #attractions-header3 h2,
 #about-header1 h2,
-#about-header2 h2, {
+#about-header2 h2,
+#about-header3 h2, {
     color: var(--text-color);
     padding-bottom: 20px;
 }
