@@ -298,7 +298,7 @@ section p, .history-section p {
 }
 
 .attractions h2, .sections h2 {
-    color: var(--primary-bg);
+    color: var(--text-color);
 }
 
 .voted h1 {
