@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function closeModal() {
         modal.remove();
-        document.body.classList.remove("modal-open"); // Allow scrolling again
+        document.body.classList.remove("modal-open");
         document.removeEventListener("keydown", keyControls);
     }
 
@@ -102,20 +102,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     images.forEach((image, index) => {
         image.addEventListener("click", () => openModal(index));
-    });
-    const searchBar = document.getElementById("searchBar");
-    const items = document.querySelectorAll("#resultsList li");
-
-    searchBar.addEventListener("keyup", function() {
-        let query = searchBar.value.toLowerCase();
-        items.forEach(item => {
-            let keywords = item.getAttribute("data-keywords").toLowerCase();
-            if (keywords.includes(query)) {
-                item.style.display = "block";
-            } else {
-                item.style.display = "none";
-            }
-        });
     });
 });
     

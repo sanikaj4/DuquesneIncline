@@ -958,21 +958,6 @@ body.modal-open {
     overflow: hidden;
 }
 
-#searchBar {
-    width: 80%;
-    max-width: 400px;
-    padding: 10px;
-    margin: 20px 0;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-}
-
-#searchResults {
-    max-width: 600px;
-    margin: auto;
-}
-
 footer {
     background-color: var(--secondary-bg);
     color: var(--text-color);
