@@ -147,45 +147,37 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
 
-$(document).ready(function() {
-    $(".mailing-form").submit(function(event) {
-        event.preventDefault(); // Prevent default form submission
-
-        let name = $("#name").val().trim();
-        let email = $("#email").val().trim();
-        let phone = $("#phone").val().trim();
-        let sms = $("#sms").is(":checked");
-        let zip = $("#zip").val().trim();
-        let message = $("#message");
-
-        // Check required fields
-        if (name === "" || email === "") {
-            message.text("Please fill out all required fields.").css("color", "red");
-            return;
-        }
-
-        // Email validation
-        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(email)) {
-            message.text("Please enter a valid email address.").css("color", "red");
-            return;
-        }
-
-        // SMS requires phone number
-        if (sms && phone === "") {
-            message.text("Phone number is required for SMS notifications.").css("color", "red");
-            return;
-        }
-
-        // Success message
-        message.text("Form submitted successfully!").css("color", "green");
-
-        // Reset form after 2 seconds
-        setTimeout(() => {
-            $(".mailing-form")[0].reset();
-            message.text("");
-        }, 2000);
-    });
-});
+function validateForm() {
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+    const sms = document.getElementById("sms");
+    const zip = document.getElementById("zip");
+    const message = document.getElementById("message");
+    const form = document.querySelector(".mailing-form");
+    if (name.value === "" || email.value === "") {
+        message.innerHTML = "Please fill out all required fields.";
+        message.style.color = "red";
+        return false;
+    }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email.value)) {
+        message.innerHTML = "Please enter a valid email address.";
+        message.style.color = "red";
+        return false;
+    }
+    if (sms.checked && phone.value === "") {
+        message.innerHTML = "Phone number is required for SMS notifications.";
+        message.style.color = "red";
+        return false;
+    }
+    message.innerHTML = "Form submitted successfully!";
+    message.style.color = "green";
+    setTimeout(() => {
+        form.reset();
+        message.innerHTML = "";
+    }, 2000);
+    
+    return true;
     
 }
