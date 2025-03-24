@@ -485,7 +485,7 @@ section p {
 
 #visit-header1 h2,
 #visit-header2 h2,
-#visit-header3 h2, {
+#visit-header3 h2 {
     color: var(--text-color);
     padding-bottom: 20px;
 }
