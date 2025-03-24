@@ -283,7 +283,11 @@ nav ul li .dropdown li a:hover {
 .attractions h2,
 .attractions p,
 .attractions h3,
-.attractions a {
+.attractions a,
+.about h2,
+.about p,
+.about h3,
+.about a {
     position: relative;
     z-index: 1;
 }
