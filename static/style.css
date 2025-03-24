@@ -1127,7 +1127,7 @@ footer .copyright p {
 }
     
     .footer-info {
-        flex-direction: column;
+        flex-direction: row;
     }
     
     .footer-info > div {
