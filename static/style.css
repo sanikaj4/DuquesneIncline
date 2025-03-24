@@ -245,7 +245,7 @@ nav ul li .dropdown li a:hover {
 
 .about {
     position: relative;
-    background: url("./creativecommons-pittsburghviewwithoutincline.jpg") no-repeat  bottom/cover;
+    background: url("./creativecommons-pittsburghviewwithoutincline.jpg") no-repeat cover;
     height: 350px;
     display: flex;
     justify-content: center;
