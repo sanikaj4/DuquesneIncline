@@ -380,7 +380,7 @@ section p, .history-section p {
 }
 
 .sections p {
-    color: var(--text-color);
+    color: var(--primary-bg);
 }
 
 .sections a {
