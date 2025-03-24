@@ -286,11 +286,15 @@ section p, .history-section p {
 }
 
 .voted h1, .voted h2, .voted p, .voted h3, .voted a,
-.attractions h2, .attractions p, .attractions h3, .attractions a,
+.attractions p, .attractions h3, .attractions a,
 .get-involved-hero h2, .get-involved-hero p,
 .media-hero h2, .media-hero p {
     position: relative;
     z-index: 1;
+}
+
+.attractions h2, .sections h2 {
+    color: var(--primary-bg);
 }
 
 .voted h1 {
