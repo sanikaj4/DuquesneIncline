@@ -893,6 +893,10 @@ section p {
     transform: scale(1.1);
 }
 
+#photo-gallery p {
+    color: var(--text-color);
+}
+
 .modal {
     position: fixed;
     top: 0;
