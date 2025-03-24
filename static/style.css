@@ -348,7 +348,7 @@ section p, .history-section p {
 }
 
 .sub-nav::before {
-    background: linear-gradient(to bottom, rgba(44, 62, 80, 0), rgba(44, 62, 80, 1));
+    background: linear-gradient(to bottom, rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 1));
 }
 
 .nav-option {
