@@ -391,7 +391,7 @@ nav ul li .dropdown li a:hover {
     display: flex;
     justify-content: center;
     background: var(--primary-bg);
-    gap: 10px;
+    gap: -110px;
 }
 
 .about-sub-nav, .visit-sub-nav {
