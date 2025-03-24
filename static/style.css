@@ -512,7 +512,7 @@ section p, .history-section p {
 }
 
 .featured-item {
-    background-color: rgba(193, 57, 43, 0.3);
+    background-color: rgba(rgba(44, 62, 80, 0.3);
     border: 2px solid var(--accent-color);
 }
 
