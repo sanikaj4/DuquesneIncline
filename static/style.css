@@ -290,6 +290,44 @@ nav ul li .dropdown li a:hover {
     z-index: 1;
 }
 
+.fare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgba(30, 30, 30, 0.7);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fare-table th, 
+.fare-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fare-table th {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.fare-table tr:last-child td {
+    border-bottom: none;
+}
+
+.category-header td {
+    background-color: var(--secondary-bg);
+    color: var(--highlight-color);
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.free {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
 .voted h1 {
     font-size: 4.6rem;
     color: var(--text-color);
