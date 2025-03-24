@@ -553,6 +553,7 @@ section p, .history-section p {
 
 .additional-items li {
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .society-content, .mailing-list-content {
