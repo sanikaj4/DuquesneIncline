@@ -473,8 +473,8 @@ section p {
 
 .weather-container {
     border-radius: 8px;
-    padding: 5px 20px;
-    height: 400px;
+    padding: 20px;
+    height: 500px;
     overflow: hidden;
 }
 
