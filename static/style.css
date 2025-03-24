@@ -405,7 +405,7 @@ nav ul li .dropdown li a:hover {
     text-align: center;
 }
 .nav-option img {
-    width: auto;
+    width: 100px;
     height: 300px;
     border-radius: 10px;
 }
