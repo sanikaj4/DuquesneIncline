@@ -255,7 +255,8 @@ nav ul li .dropdown li a:hover {
     margin-top: 120px;
 }
 
-.attractions h2 {
+.attractions h2,
+.about h2 {
     font-size: 3rem;
 }
 
