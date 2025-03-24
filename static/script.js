@@ -51,17 +51,48 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     const images = document.querySelectorAll(".gallery img");
-    images.forEach(image => {
-        image.addEventListener("click", function() {
-            const modal = document.createElement("div");
-            modal.classList.add("modal");
-            modal.innerHTML = `<img src="${image.src}" alt="Large View"><span class="close">&times;</span>`;
-            document.body.appendChild(modal);
-
-            document.querySelector(".close").addEventListener("click", () => {
-                modal.remove();
-            });
-        });
+    let currentIndex = 0;
+    let modal;
+    function openModal(index) {
+        currentIndex = index;
+        modal = document.createElement("div");
+        modal.classList.add("modal");
+        modal.innerHTML = `
+            <span class="close">&times;</span>
+            <img src="${images[index].src}" class="modal-img">
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        `;
+        document.body.appendChild(modal);
+        document.querySelector(".close").addEventListener("click", closeModal);
+        document.querySelector(".prev").addEventListener("click", () => navigate(-1));
+        document.querySelector(".next").addEventListener("click", () => navigate(1));
+        document.addEventListener("keydown", keyControls);
+    }
+    function closeModal() {
+        modal.remove();
+        document.removeEventListener("keydown", keyControls);
+    }
+    function navigate(direction) {
+        currentIndex += direction;
+        if (currentIndex < 0) {
+            currentIndex = images.length - 1;
+        } else if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        document.querySelector(".modal-img").src = images[currentIndex].src;
+    }
+    function keyControls(event) {
+        if (event.key === "ArrowRight") {
+            navigate(1);
+        } else if (event.key === "ArrowLeft") {
+            navigate(-1);
+        } else if (event.key === "Escape") {
+            closeModal();
+        }
+    }
+    images.forEach((image, index) => {
+        image.addEventListener("click", () => openModal(index));
     });
 });
 
