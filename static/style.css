@@ -744,7 +744,7 @@ section p {
 .get-involved-hero {
     position: relative;
     background: url("../static/getinvolved.jpg") no-repeat center/cover;
-    height: 150px;
+    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
