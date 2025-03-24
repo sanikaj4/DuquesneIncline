@@ -299,6 +299,7 @@ section p, .history-section p {
 
 .attractions h2 {
     color: var(--text-color);
+    z-index: 1;
 }
 
 .sections h2 {
