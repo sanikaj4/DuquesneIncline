@@ -294,7 +294,7 @@ nav ul li .dropdown li a:hover {
     font-size: 2.6rem;
     color: var(--text-color);
     padding-bottom: 320px;
-    text-align: center;
+    align-items: center;
 }
 
 .voted h3 {
