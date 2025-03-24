@@ -147,37 +147,40 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
 
-function validateForm() {
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
-    const phone = document.getElementById("phone");
-    const sms = document.getElementById("sms");
-    const zip = document.getElementById("zip");
-    const message = document.getElementById("message");
-    const form = document.querySelector(".mailing-form");
-    if (name.value === "" || email.value === "") {
-        message.innerHTML = "Please fill out all required fields.";
-        message.style.color = "red";
-        return false;
-    }
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email.value)) {
-        message.innerHTML = "Please enter a valid email address.";
-        message.style.color = "red";
-        return false;
-    }
-    if (sms.checked && phone.value === "") {
-        message.innerHTML = "Phone number is required for SMS notifications.";
-        message.style.color = "red";
-        return false;
-    }
-    message.innerHTML = "Form submitted successfully!";
-    message.style.color = "green";
-    setTimeout(() => {
-        form.reset();
-        message.innerHTML = "";
-    }, 2000);
-    
-    return true;
-    
-}
+$(document).ready(function() {
+    $('.submit-btn').on('click', function() {
+        // Select elements using jQuery
+        const $name = $('#name');
+        const $email = $('#email');
+        const $phone = $('#phone');
+        const $sms = $('#sms');
+        const $zip = $('#zip');
+        const $message = $('#message');
+        const $form = $('.mailing-form');
+        $message.html('').css('color', '');
+        if ($name.val().trim() === '' || $email.val().trim() === '') {
+            $message.html("Please fill out all required fields.")
+                    .css('color', 'red');
+            return false;
+        }
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test($email.val())) {
+            $message.html("Please enter a valid email address.")
+                    .css('color', 'red');
+            return false;
+        }
+        if ($sms.is(':checked') && $phone.val().trim() === '') {
+            $message.html("Phone number is required for SMS notifications.")
+                    .css('color', 'red');
+            return false;
+        }
+        $message.html("Form submitted successfully!")
+                .css('color', 'green');
+        setTimeout(function() {
+            $form[0].reset();
+            $message.html('');
+        }, 2000);
+
+        return true;
+    });
+});
