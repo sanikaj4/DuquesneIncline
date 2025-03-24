@@ -733,7 +733,7 @@ section p {
 .about-hero {
     position: relative;
     background: var(--primary-bg);
-    height: 150px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
