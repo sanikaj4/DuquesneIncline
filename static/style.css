@@ -29,6 +29,7 @@ body {
     width: var(--container-width);
     max-width: var(--container-max);
     margin: 0 auto;
+    padding: 20px;
 }
 
 .btn {
@@ -730,71 +731,6 @@ section p {
     margin-bottom: 10px;
 }
 
-.visit-hero {
-    position: relative;
-    background: var(--primary-bg);
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--text-color);
-    margin-top: 140px;
-}
-
-.about-hero {
-    position: relative;
-    background: var(--primary-bg);
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--text-color);
-    margin-top: 140px;
-}
-
-.get-involved-hero {
-    position: relative;
-    background: url("../static/getinvolved.jpg") no-repeat center/cover;
-    height: 750px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--text-color);
-    margin-top: 120px;
-}
-
-.get-involved-hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(44, 62, 80, 0.6), rgba(44, 62, 80, 1));
-}
-
-.get-involved-hero h2,
-.get-involved-hero p {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    max-height: 200px;
-    margin: 0 auto;
-}
-
-.get-involved-hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.get-involved-hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
 .society-section,
 .mailing-list-section {
     background-color: var(--primary-bg);
@@ -901,46 +837,6 @@ section p {
 
 .required {
     color: var(--accent-color);
-}
-
-.media-hero {
-    position: relative;
-    background: url("../static/media.jpg") no-repeat bottom/cover;
-    height: 750px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--text-color);
-    margin-top: 120px;
-}
-
-.media-hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(44, 62, 80, 0), rgba(44, 62, 80, 1));
-}
-
-.media-hero h2,
-.media-hero p {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.media-hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.media-hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
 }
 
 .media-content {
