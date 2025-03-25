@@ -29,7 +29,6 @@ body {
     width: var(--container-width);
     max-width: var(--container-max);
     margin: 0 auto;
-    padding: 20px;
 }
 
 .btn {
