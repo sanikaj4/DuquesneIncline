@@ -245,13 +245,13 @@ nav ul li .dropdown li a:hover {
 .about {
     position: relative;
     background: url("./creativecommons-pittsburghviewwithoutincline.jpg") no-repeat bottom/cover;
-    height: 150px;
+    height: 210px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: bottom;
     color: var(--text-color);
-    margin-top: 140px;
+    margin-top: 120px;
 }
 
 .attractions h2,
