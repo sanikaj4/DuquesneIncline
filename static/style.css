@@ -251,6 +251,7 @@ nav ul li .dropdown li a:hover {
     align-items: center;
     text-align: bottom;
     color: var(--text-color);
+    margin-top: 120px;
 }
 
 .attractions h2,
@@ -480,6 +481,7 @@ section p {
 #about-header1 h2,
 #about-header2 h2 {
     color: var(--text-color);
+    padding-bottom: 20px;
 }
 
 #visit-header1 h2,
