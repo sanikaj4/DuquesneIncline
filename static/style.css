@@ -56,7 +56,7 @@ header {
     left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    max-height: var(--header-height);
+    min-height: var(--header-height);
 }
 
 header .container {
