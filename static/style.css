@@ -251,7 +251,7 @@ nav ul li .dropdown li a:hover {
     align-items: center;
     text-align: bottom;
     color: var(--text-color);
-    margin-top: var(--header-height);
+    margin-top: 140px;
 }
 
 .attractions h2,
