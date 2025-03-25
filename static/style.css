@@ -313,6 +313,7 @@ nav ul li .dropdown li a:hover {
 
 .faq-category h2 {
     color: var(--highlight-color);
+    margin-bottom: 10px;
 }
 
 .note {
