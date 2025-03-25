@@ -142,13 +142,11 @@ nav ul li .dropdown li a:hover {
 }
 
 .history-section h1 {
-    margin-bottom: 30px;
     text-align: center;
     font-size: 2.2rem;
 }
 
 .history-section p {
-    margin-bottom: 20px;
     text-align: left;
     max-width: 800px;
     margin-left: auto;
