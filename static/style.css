@@ -306,7 +306,7 @@ nav ul li .dropdown li a:hover {
 }
 
 .faq-category a {
-    color: var(--text-color);
+    color: var(--highlight-color);
     position: relative;
     z-index: 1;
 }
