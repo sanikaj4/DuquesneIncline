@@ -137,21 +137,28 @@ nav ul li .dropdown li a:hover {
 }
 
 .history-section {
+    padding: 50px 0;
     background-color: var(--primary-bg);
     color: var(--text-color);
 }
 
 .history-section h1 {
+    margin-bottom: 30px;
     text-align: center;
     font-size: 2.2rem;
 }
 
 .history-section p {
+    margin-bottom: 20px;
     text-align: left;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.1rem;
+}
+
+.history-section h3 {
+    text-align: left;
 }
 
 .collapsible {
