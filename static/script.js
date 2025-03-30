@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     let modal;
 
+    // ChatGPT helped with this structure
     function openModal(index) {
         currentIndex = index;
         modal = document.createElement("div");
